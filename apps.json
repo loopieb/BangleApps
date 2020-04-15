@@ -1240,16 +1240,15 @@
       {"name":"calculator.img","url":"calculator-icon.js","evaluate":true}
     ]
 },
-{ "id": "timer",
-  "name": "My Timer App",
-  "shortName":"My Timer",
-  "icon": "app.png",
+   { "id": "wristtemp",
+  "name": "Body Temperature from wrist",
+  "shortName":"wtemp",
+  "icon": "widget.png",
   "version":"0.01",
-  "description": "This is a description of my awesome timer app",
-  "tags": "",
+  "description": "Wrist Temperature correlation",
+  "tags": "widget",
+  "type": "widget",
   "storage": [
-    {"name":"timer.app.js","url":"app.js"},
-    {"name":"timer.img","url":"app-icon.js","evaluate":true}
+    {"name":"wtemp.wid.js","url":"widget.js"}
   ]
 }
-]
