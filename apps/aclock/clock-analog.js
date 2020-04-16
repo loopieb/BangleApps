@@ -83,8 +83,8 @@ const onSecond = () => {
 
 const drawDate = () => {
   g.reset();
-  g.setColor(1, 0, 0);
-  g.setFont('6x8', 2);
+  g.setColor(1, 0.9, 0.9);
+  g.setFont('6x8', 3);
 
   const dayString = locale.dow(currentDate, true);
   // pad left date
