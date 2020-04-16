@@ -1,9 +1,9 @@
 (() => {
-  var width = 40;
+  var width = 24;
   function draw() {
     g.reset();
     g.setFontAlign(0,0); 
-    g.setFont("Vector",20);
+    g.setFont("6x8",3);
       var temp = E.getTemperature()+5.56+"C";
        
     g.drawString(temp, this.x+width/2+9, this.y+3);
