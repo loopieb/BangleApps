@@ -15,7 +15,7 @@
       var text = E.getTemperature();
           //require("locale").month(date,1);
     g.setFont("6x8");
-    g.drawString(text, this.x+width/2, this.y+19);
+    g.drawString(text, this.x+width/2, this.y+15);
   }
 
   setInterval(function() {
