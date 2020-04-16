@@ -12,10 +12,10 @@
    // g.drawString(date.getDate(), this.x+width/2, this.y+9);
     // Use 'locale' module to get a shortened day of the week
     // in the correct language    
-      var text = E.getTemperature()+5.6;
+      var text = E.getTemperature();
           //require("locale").month(date,1);
     g.setFont("6x8",2);
-    g.drawString(text, this.x+width/2, this.y+10);
+    g.drawString(text, this.x+width/2, this.y+19);
   }
 
   setInterval(function() {
@@ -24,7 +24,7 @@
 
   // add your widget
   WIDGETS["date"]={
-    area:"bl", // tl (top left), tr (top right), bl (bottom left), br (bottom right)
+    area:"tl", // tl (top left), tr (top right), bl (bottom left), br (bottom right)
     width: width, // how wide is the widget? You can change this and call Bangle.drawWidgets() to re-layout
     draw:draw // called to draw the widget
   };
