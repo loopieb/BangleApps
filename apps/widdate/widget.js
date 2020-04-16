@@ -12,7 +12,7 @@
    // g.drawString(date.getDate(), this.x+width/2, this.y+9);
     // Use 'locale' module to get a shortened day of the week
     // in the correct language    
-      var text = E.getTemperature()+5.6;
+      var text = E.getTemperature()+5.6+"C";
           //require("locale").month(date,1);
     g.setFont("6x8",2);
     g.drawString(text, this.x+width/2, this.y+15);
