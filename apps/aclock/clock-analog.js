@@ -83,7 +83,7 @@ const onSecond = () => {
 
 const drawDate = () => {
   g.reset();
-  g.setColor(2, 0, 0);
+  g.setColor(-1);
   g.setFont('6x8', 3);
 
   const dayString = locale.dow(currentDate, true);
