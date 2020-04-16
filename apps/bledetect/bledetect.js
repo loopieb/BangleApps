@@ -53,6 +53,7 @@ function scan() {
 function waitMessage() {
   E.showMenu();
   E.showMessage("scanning");
+  E.getTemperature();
 }
 
 scan();
