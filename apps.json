@@ -1251,5 +1251,17 @@
   "storage": [
     {"name":"wtemp.wid.js","url":"widget.js"}
   ]
+   },
+   { "id": "widdate",
+  "name": "Date month",
+  "shortName":"widdate",
+  "icon": "widget.png",
+  "version":"0.01",
+  "description": "Month display",
+  "tags": "widget",
+  "type": "widget",
+  "storage": [
+    {"name":"widdate.wid.js","url":"widget.js"}
+  ]
       }
 ]
