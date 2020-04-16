@@ -1239,7 +1239,7 @@
       {"name":"calculator.app.js","url":"app.js"},
       {"name":"calculator.img","url":"calculator-icon.js","evaluate":true}
     ]
-},
+   },
    { "id": "widdate",
   "name": "Date month",
   "shortName":"widdate",
@@ -1251,17 +1251,5 @@
   "storage": [
     {"name":"widdate.wid.js","url":"widget.js"}
     ]
-},
-   { "id": "widtemp",
-  "name": "Temperature widget",
-  "shortName":"widtemp",
-  "icon": "widget.png",
-  "version":"0.01",
-  "description": "Wrist temperature to body temperature",
-  "tags": "widget",
-  "type": "widget",
-  "storage": [
-    {"name":"widtemp.wid.js","url":"widget.js"}
-  ]
       }
 ]
