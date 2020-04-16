@@ -14,7 +14,7 @@
     // in the correct language    
       var text = E.getTemperature();
           //require("locale").month(date,1);
-    g.setFont("6x8");
+    g.setFont("6x8",2);
     g.drawString(text, this.x+width/2, this.y+15);
   }
 
