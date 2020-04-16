@@ -3,7 +3,7 @@
   function draw() {
     g.reset();
     g.setFontAlign(0,0); 
-    g.setFont("6x8",3);
+    g.setFont("6x8");
       var temp = E.getTemperature()+5.56;
        
     g.drawString(temp, this.x+width/2+9, this.y+3);
