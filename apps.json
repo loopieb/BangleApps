@@ -1262,8 +1262,8 @@
   "type": "widget",
   "storage": [
     {"name":"widdate.wid.js","url":"widget.js"}
-  ]
-    },
+    ]
+},
    { "id": "widtemp",
   "name": "Temperature widget",
   "shortName":"widtemp",
