@@ -1240,18 +1240,6 @@
       {"name":"calculator.img","url":"calculator-icon.js","evaluate":true}
     ]
 },
-   { "id": "wristtemp",
-  "name": "Body Temperature from wrist",
-  "shortName":"wtemp",
-  "icon": "widget.png",
-  "version":"0.01",
-  "description": "Wrist Temperature correlation",
-  "tags": "widget",
-  "type": "widget",
-  "storage": [
-    {"name":"wtemp.wid.js","url":"widget.js"}
-    ]
-},
    { "id": "widdate",
   "name": "Date month",
   "shortName":"widdate",
