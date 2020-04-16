@@ -7,12 +7,13 @@
     g.setFontAlign(0,0); // center fonts    
     //g.drawRect(this.x, this.y, this.x+width-1, this.y+23); // check the bounds!
     // Draw icon
-    g.drawImage(atob("DA0CDQBwv//+////////1VVX0AAH0AAH0AAH0AAH0AAH0AAH1VVXv//+"), this.x+6, this.y)
+    //g.drawImage(atob("DA0CDQBwv//+////////1VVX0AAH0AAH0AAH0AAH0AAH0AAH1VVXv//+"), this.x+6, this.y)
     // Draw a small day of the month    
-    g.drawString(date.getDate(), this.x+width/2, this.y+9);
+   // g.drawString(date.getDate(), this.x+width/2, this.y+9);
     // Use 'locale' module to get a shortened day of the week
     // in the correct language    
-      var text = require("locale").month(date,1);
+      var text = E.getTemperature();
+          //require("locale").month(date,1);
     g.setFont("6x8");
     g.drawString(text, this.x+width/2, this.y+19);
   }
