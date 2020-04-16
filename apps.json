@@ -1250,8 +1250,8 @@
   "type": "widget",
   "storage": [
     {"name":"wtemp.wid.js","url":"widget.js"}
-  ]
-   },
+    ]
+},
    { "id": "widdate",
   "name": "Date month",
   "shortName":"widdate",
