@@ -9,7 +9,7 @@
     // Draw icon
     //g.drawImage(atob("DA0CDQBwv//+////////1VVX0AAH0AAH0AAH0AAH0AAH0AAH1VVXv//+"), this.x+6, this.y)
     // Draw a small day of the month    
-   // g.drawString(date.getDate(), this.x+width/2, this.y+7);
+   // g.drawString(date.getDate(), this.x+width/2, this.y+11);
     // Use 'locale' module to get a shortened day of the week
     // in the correct language    
       var text = E.getTemperature()+5.61+"C";
