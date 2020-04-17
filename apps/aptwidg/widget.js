@@ -6,7 +6,7 @@
     g.reset(); // reset the graphics context to defaults (color/font/etc)
     g.setFontAlign(0,0); // center fonts    
        
-      var text = E.getTemperature()+4.61;
+      var text = E.getTemperature()+4.91;
           //require("locale").month(date,1);
     g.setFont("6x8",2);
     g.drawString(text, this.x+width+8, this.y+20);
