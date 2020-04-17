@@ -1251,5 +1251,17 @@
   "storage": [
     {"name":"widdate.wid.js","url":"widget.js"}
     ]
+   },
+   { "id": "aptwidg",
+  "name": "Personal Temperature",
+  "shortName":"aptwidg",
+  "icon": "widget.png",
+  "version":"0.01",
+  "description": "Personal Body Temperature from wrist",
+  "tags": "widget",
+  "type": "widget",
+  "storage": [
+    {"name":"aptwidg.wid.js","url":"widget.js"}
+    ]
       }
 ]
