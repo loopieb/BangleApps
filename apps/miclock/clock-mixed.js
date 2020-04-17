@@ -58,6 +58,7 @@ function drawMixedClock() {
     g.setColor(0x7be0);
     g.setFontAlign(0, 0);
     g.drawString(dateArray[4].substr(0, 5), 120, 180, true);
+    g.drawString(E.getTemperature().substr(0, 5), 120, 60, true);
 
     // draw new minute hand
     point = rotatePoint(0, Radius.min, minute * 6);
