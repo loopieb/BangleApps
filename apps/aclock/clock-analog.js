@@ -96,7 +96,7 @@ const drawDate = () => {
   const t = centerY + 37;
   const d = centerY - 37;
   g.drawString(dateDisplay, l, t, true);
-  g.drawString(E.getTemperature()+5.61, l, d, true);
+  g.drawString(E.getTemperature(), l, d, true);
   // console.log(l, t);
 };
 const onMinute = () => {
