@@ -1253,7 +1253,7 @@
     ]
    },
    { "id": "aptwidg",
-  "name": "Personal Temperature",
+  "name": "A Personal Temperature",
   "shortName":"aptwidg",
   "icon": "widget.png",
   "version":"0.01",
