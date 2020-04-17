@@ -1257,7 +1257,7 @@
   "shortName":"aptwidg",
   "icon": "widget.png",
   "version":"0.01",
-  "description": "Personal Body Temperature from wrist",
+  "description": "A Personal Body Temperature from wrist",
   "tags": "widget",
   "type": "widget",
   "storage": [
