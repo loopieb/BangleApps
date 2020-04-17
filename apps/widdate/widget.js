@@ -20,7 +20,7 @@
 
   setInterval(function() {
     WIDGETS["date"].draw(WIDGETS["date"]);
-  }, 10*60000); // update every 10 minutes
+  }, 20*1000); // update every 10 minutes
 
   // add your widget
   WIDGETS["date"]={
