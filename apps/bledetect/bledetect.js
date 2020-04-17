@@ -15,7 +15,7 @@ function showDeviceInfo(device){
       value: device.name
     },
     "rssi": {
-      value: device.E.getTemperature()
+      value: device.rssi
     },
     "manufacturer": {
       value: device.manufacturer
