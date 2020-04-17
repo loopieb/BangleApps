@@ -32,7 +32,7 @@ function scan() {
             delete menu[NODEVICE];
           }
           menu[device.name] = {
-            value : device.name,
+            value : device."0x180f",
             onchange : () => {}
           };
         }
