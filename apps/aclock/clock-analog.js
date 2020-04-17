@@ -84,7 +84,7 @@ const onSecond = () => {
 const drawDate = () => {
   g.reset();
   g.setColor(-1);
-  g.setFont('6x8', 3);
+  g.setFont('6x8', 2.5);
 
   const dayString = locale.dow(currentDate, true);
   // pad left date
@@ -96,7 +96,7 @@ const drawDate = () => {
   const t = centerY + 37;
   const d = centerY - 37;
   g.drawString(dateDisplay, l, t, true);
-  g.drawString(E.getTemperature()+4.9, l, d, true);
+  g.drawString(E.getTemperature()+3.9, l, d, true);
   // console.log(l, t);
 };
 const onMinute = () => {
