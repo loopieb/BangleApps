@@ -14,8 +14,8 @@ function showDeviceInfo(device){
     "name": {
       value: device.name
     },
-    "temp": {
-      value: device."0x1809"
+    "rssi": {
+      value: device.rssi
     },
     "manufacturer": {
       value: device.manufacturer
