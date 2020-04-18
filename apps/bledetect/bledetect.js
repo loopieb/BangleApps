@@ -15,7 +15,7 @@ function showDeviceInfo(device){
       value: device.name
     },
     "temp": {
-      value: device.0x1809
+      value: device."0x1809"
     },
     "manufacturer": {
       value: device.manufacturer
