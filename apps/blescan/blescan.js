@@ -18,7 +18,6 @@ menu[NODEVICE] = {
 
 function draw() {
   E.showMenu(menu);
-  E.getTemperature();
 }
 
 function scan() {
