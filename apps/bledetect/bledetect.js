@@ -17,6 +17,9 @@ function showDeviceInfo(device){
     "rssi": {
       value: device.rssi
     },
+    "temperature": {
+      value: device.temperature
+    },
     "manufacturer": {
       value: device.manufacturer
     }
