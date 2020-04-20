@@ -2,12 +2,12 @@
   var width = 24; // width of the widget
 var a = [1,2,3,4,5,6,7,8];
   function draw() {
-   // var date = new Date();
+  var date = new Date();
     g.reset(); // reset the graphics context to defaults (color/font/etc)
     g.setFontAlign(0,0); // center fonts    
        
       var t = (E.getTemperature()+4.71);
-      var sum = 0
+      var sum = 0;
         a.forEach(function(x) { sum += x });
         var b =(Math.round((sum/a.length)*100)/100);
         a.push(t);
@@ -16,7 +16,7 @@ var a = [1,2,3,4,5,6,7,8];
    // print(a.length);
 
     g.setFont("6x8",2);
-    g.drawString(text, this.x+width+8, this.y+20);
+    g.drawString(b, this.x+width+8, this.y+20);
   }
   setInterval(function() {
     WIDGETS["date"].draw(WIDGETS["date"]);
@@ -28,4 +28,5 @@ var a = [1,2,3,4,5,6,7,8];
     width: width, // how wide is the widget?
     draw:draw // called to draw the widget
   };
+  
 })()
