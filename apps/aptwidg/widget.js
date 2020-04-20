@@ -20,7 +20,7 @@ var a = [35,35,35,35,35,35,35,35];
   }
   setInterval(function() {
     WIDGETS["date"].draw(WIDGETS["date"]);
-  }, 60*1000); // update every minute
+  }, 15*1000); // update every minute
 
   // add your widget
   WIDGETS["date"]={
