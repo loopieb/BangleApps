@@ -1,5 +1,5 @@
 (() => {
-  var width = 24; // width of the widget
+  var width = 25; // width of the widget
 var a = [31,32,33,34,25,26,27,28];
   function draw() {
   var date = new Date();
@@ -7,20 +7,20 @@ var a = [31,32,33,34,25,26,27,28];
     g.setFontAlign(0,0); // center fonts    
        
       var t = (E.getTemperature()+4.71);
-      var sum =35.8;
+      var sum = 36.5;
         a.forEach(function(x) { sum += x });
         var b =(Math.round((sum/a.length)*100)/100);
         a.push(t);
         a.shift();
-   print(b,a.length);
+   print(b+"c");
    // print(a.length);
 
     g.setFont("6x8",2);
-    g.drawString(b, this.x+width+8, this.y+20);
+    g.drawString(b+"C", this.x+width+4, this.y+18);
   }
   setInterval(function() {
     WIDGETS["date"].draw(WIDGETS["date"]);
-  }, 60*1000); // update every 10 minutes
+  }, 60*1000); // update every minute
 
   // add your widget
   WIDGETS["date"]={
