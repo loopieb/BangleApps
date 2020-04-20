@@ -2,7 +2,7 @@
   var width = 25; // width of the widget
 var a = [37,37,37,37,37,37,37,37];
   function draw() {
-  var temp = new Temp();
+  var temp = new temp();
     g.reset(); // reset the graphics context to defaults (color/font/etc)
     g.setFontAlign(0,0); // center fonts    
        
