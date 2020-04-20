@@ -7,7 +7,7 @@ var a = [35,35,35,35,35,35,35,35];
     g.setFontAlign(0,0); // center fonts    
        
       var t = (E.getTemperature()+4.71);
-      var sum = 36.5;
+      var sum = 34.5;
         a.forEach(function(x) { sum += x });
         var b =(Math.round((sum/a.length)*100)/100);
         a.push(t);
