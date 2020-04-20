@@ -6,22 +6,18 @@ var a = [1,2,3,4,5,6,7,8];
     g.reset(); // reset the graphics context to defaults (color/font/etc)
     g.setFontAlign(0,0); // center fonts    
        
-     // var text = E.getTemperature()+4.71;
-          //require("locale").month(date,1);
       var t = (E.getTemperature()+4.71);
-  var sum = 0
-  a.forEach(function(x) { sum += x });
-  var b =(Math.round((sum/a.length)*100)/100);
-    a.push(t);
-    a.shift();
-   // a.pop();
+      var sum = 0
+        a.forEach(function(x) { sum += x });
+        var b =(Math.round((sum/a.length)*100)/100);
+        a.push(t);
+        a.shift();
    print(b,a.length);
    // print(a.length);
 
     g.setFont("6x8",2);
     g.drawString(text, this.x+width+8, this.y+20);
   }
-
   setInterval(function() {
     WIDGETS["date"].draw(WIDGETS["date"]);
   }, 60*1000); // update every 10 minutes
