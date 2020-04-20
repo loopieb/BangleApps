@@ -1,6 +1,6 @@
 (() => {
   var width = 25; // width of the widget
-var a = [31,32,33,34,25,26,27,28];
+var a = [37,37,37,37,37,37,37,37];
   function draw() {
   var date = new Date();
     g.reset(); // reset the graphics context to defaults (color/font/etc)
