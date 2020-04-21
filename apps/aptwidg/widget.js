@@ -1,12 +1,12 @@
 (() => {
   var width = 25; // width of the widget
-var a = [28,28,28,28,28,28,28,28];
+var a = [37,37,37,37,37,37,37,37];
   function draw() {
   var date = new Date();
     g.reset(); // reset the graphics context to defaults (color/font/etc)
     g.setFontAlign(0,0); // center fonts    
        
-      var t = (E.getTemperature()+1.25);
+      var t = (E.getTemperature()+1.2);
       var sum = 28;
         a.forEach(function(x) { sum += x });
         var b =(Math.round((sum/a.length)*100)/100);
