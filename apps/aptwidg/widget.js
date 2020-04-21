@@ -12,7 +12,7 @@ var a = [30,30,30,30,30,30,30,30];
         var b =(Math.round((sum/a.length)*100)/100);
         a.push(t);
         a.shift();
-   print(b+"c");
+   print(sum,b+"c");
    print(b,a.length);
 
     g.setFont("6x8",2);
