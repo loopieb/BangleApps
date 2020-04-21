@@ -6,7 +6,7 @@ var a = [32,32,32,32,30,30,30,30];
     g.reset(); // reset the graphics context to defaults (color/font/etc)
     g.setFontAlign(0,0); // center fonts    
        
-      var t = (E.getTemperature()+4.21);
+      var t = (E.getTemperature()+3.21);
       var sum = 32;
         a.forEach(function(x) { sum += x });
         var b =(Math.round((sum/a.length)*100)/100);
