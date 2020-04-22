@@ -12,8 +12,8 @@ var a = [37,37,37,37,37,37,37,37];
         var b =(Math.round((sum/a.length)*100)/100);
         a.push(t);
         a.shift();
-   print(sum,b+"c");
-   print(b,a.length);
+  // print(sum,b+"c");
+ //  print(b,a.length);
 
     g.setFont("6x8",2);
     g.drawString(b+"C", this.x+width+4, this.y+18);
