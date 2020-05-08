@@ -1265,17 +1265,3 @@
     ]
       }
 ]
-},
-   { "id": "aptmwid",
-  "name": "Personal Meds Temperature",
-  "shortName":"aptmwid",
-  "icon": "widget.png",
-  "version":"0.01",
-  "description": "Personal Meds Fridge Temperature",
-  "tags": "widget",
-  "type": "widget",
-  "storage": [
-    {"name":"aptmwid.wid.js","url":"widget.js"}
-    ]
-      }
-]
