@@ -28,7 +28,7 @@
         t = d.charCodeAt(idx+2);
       //  print(t);
         g.setFont("6x8",2.5);
-       g.drawString("M"+t+"c", this.x+width+4, this.y+18);
+       g.drawString("M"+t+"c", this.x+width+33, this.y+5);
       
  // g.flip();
         }
