@@ -1264,15 +1264,15 @@
     {"name":"aptwidg.wid.js","url":"widget.js"}
     ]
     },
-   { "id": "aptwidg",
-  "name": "A Personal Temperature",
-  "shortName":"aptwidg",
+   { "id": "aptmwid",
+  "name": "Personal Meds Temperature",
+  "shortName":"aptmwid",
   "icon": "widget.png",
   "version":"0.01",
-  "description": "A Personal Body Temperature from wrist",
+  "description": "Personal Meds Fridge Temperature",
   "tags": "widget",
   "type": "widget",
   "storage": [
-    {"name":"aptwidg.wid.js","url":"widget.js"}
+    {"name":"aptmwid.wid.js","url":"widget.js"}
     ]
-   },
+   }
