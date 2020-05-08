@@ -1274,5 +1274,5 @@
   "type": "widget",
   "storage": [
     {"name":"aptwidg.wid.js","url":"widget.js"}
-    ],
+    ]
    },
