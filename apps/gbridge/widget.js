@@ -81,17 +81,17 @@
       g.setFontAlign(0, 0);
       g.setFont("6x8", 1);
       g.setColor("#40d040");
-      g.drawString(event.src, x, y + 7);
+    //  g.drawString(event.src, x, y + 7);
 
       g.setColor("#ffffff");
       g.setFont("6x8", 2);
       if (event.title)
-        g.drawString(event.title.slice(0,17), x, y + 25);
+    //    g.drawString(event.title.slice(0,17), x, y + 25);
 
       g.setFont("6x8", 1);
       g.setColor("#ffffff");
       g.setFontAlign(-1, -1);
-      g.drawString(txt.join("\n"), 10, y + 40);
+    //  g.drawString(txt.join("\n"), 10, y + 40);
     });
 
     Bangle.buzz();
@@ -104,7 +104,7 @@
     if (state.music == "play") {
       showNotification(40, (y) => {
         g.setColor("#ffffff");
-        g.drawImage(require("heatshrink").decompress(atob("jEYwILI/EAv/8gP/ARcMgOAASN8h+A/kfwP8n4CD/E/gHgjg/HA=")), 8, y + 8);
+     //   g.drawImage(require("heatshrink").decompress(atob("jEYwILI/EAv/8gP/ARcMgOAASN8h+A/kfwP8n4CD/E/gHgjg/HA=")), 8, y + 8);
 
         g.setFontAlign(-1, -1);
         var x = 40;
