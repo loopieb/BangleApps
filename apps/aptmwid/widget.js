@@ -2,6 +2,7 @@
   
   var width = 24; // width of the widget
    function draw() {
+     var temp  = new Temp();
     g.reset(); 
     g.setFontAlign(0,0); // center fonts
   function getTemp() { 
@@ -14,7 +15,7 @@
       var idx = d.indexOf(String.fromCharCode(0x09,0x18));
       if (idx>=0) {
         t = d.charCodeAt(idx+2);      
-        g.setFont("6x8",2.5);
+        g.setFont("6x8");
        g.drawString("M"+t+"c", this.x+width/2, this.y+12);
       }
     }
