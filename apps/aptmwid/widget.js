@@ -30,6 +30,6 @@ setInterval(getTemp, 20000);
 
   // add your widget
   WIDGETS.date={
-    area:"tl", width: width, draw:draw // called to draw the widget
+    area:"br", width: width, draw:draw // called to draw the widget
   }; 
 })()
