@@ -15,8 +15,8 @@
       var idx = d.indexOf(String.fromCharCode(0x09,0x18));
       if (idx>=0) {
         t = d.charCodeAt(idx+2);      
-        g.setFont("6x8");
-       g.drawString("M"+t+"c", this.x+width/2, this.y+12);
+        g.setFont("6x8",2.5);
+       g.drawString("M"+t+"c", this.x+width/2+4, this.y+14);
       }
     }
    }, 2000 /* receive for 2000ms */);
@@ -26,7 +26,7 @@ setInterval(getTemp, 20000);
    }
   setInterval(function() {
  WIDGETS.date.draw(WIDGETS.date);
-  }, 30*1000); // update every 30 secs
+  }, 10*1000); // update every 30 secs
 
   // add your widget
   WIDGETS.date={
