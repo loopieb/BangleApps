@@ -24,6 +24,7 @@
 }
 // look once a minute for temperature
 setInterval(getTemp, 20000);
+     return t;
    }
    g.setFont("6x8",2.5);
    g.drawString("M"+t+"c", this.x+width+4, this.y+18);
