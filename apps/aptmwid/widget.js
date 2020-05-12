@@ -26,7 +26,7 @@
 setInterval(getTemp, 20000);
    }
    g.setFont("6x8",2.5);
-       g.drawString("M"+t+"c", this.x+width/2+4, this.y+14);
+       g.drawString("M"+t+"c", this.x+width+4, this.y+18);
   setInterval(function() {
  WIDGETS.date.draw(WIDGETS.date);
   }, 10*1000); // update every 30 secs
