@@ -16,8 +16,8 @@
       var idx = d.indexOf(String.fromCharCode(0x09,0x18));
       if (idx>=0) {
    var t = d.charCodeAt(idx+2);      
-    //    g.setFont("6x8",2.5);
-    //    g.drawString("M"+t+"c", this.x+width/2+4, this.y+14);
+     g.setFont("6x8",2.5);
+    g.drawString("M"+t+"c", this.x+width+4, this.y+18);
       }
     }
    }, 2000 /* receive for 2000ms */);
@@ -26,7 +26,7 @@
 setInterval(getTemp, 20000);
    }
    g.setFont("6x8",2.5);
-       g.drawString("M"+t+"c", this.x+width+4, this.y+18);
+   g.drawString("M"+t+"c", this.x+width+4, this.y+18);
   setInterval(function() {
  WIDGETS.date.draw(WIDGETS.date);
   }, 10*1000); // update every 30 secs
