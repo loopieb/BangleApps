@@ -15,7 +15,7 @@ const GraphLcdY = GraphYZero + 10;
 var Storage = require("Storage");
 
 function renderCoordinateSystem() {
-  g.setFont("6x8", 1);
+  g.setFont("6x8", 1.5);
   
   // Left Y axis (Battery)
   g.setColor(1, 1, 0);
