@@ -24,7 +24,7 @@ var a = [37,37,37,37,37,37,37,37];
 
   // add your widget
   WIDGETS["date"]={
-    area:"bl", // tl (top left), tr (top right), bl (bottom left), br (bottom right)
+    area:"tl", // tl (top left), tr (top right), bl (bottom left), br (bottom right)
     width: width, // how wide is the widget?
     draw:draw // called to draw the widget
   };
