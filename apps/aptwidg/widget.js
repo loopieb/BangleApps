@@ -1,5 +1,5 @@
 (() => {
-  var width = 25; // width of the widget
+  var width = 24; // width of the widget
 var a = [37,37,37,37,37,37,37,37];
   function draw() {
   var date = new Date();
@@ -15,7 +15,7 @@ var a = [37,37,37,37,37,37,37,37];
   // print(sum,b+"c");
  //  print(b,a.length);
 
-    g.setFont("6x8",2.5);
+    g.setFont("6x8",2);
     g.drawString(b+"C", this.x+width+4, this.y+18);
   }
   setInterval(function() {
