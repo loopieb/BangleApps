@@ -2,8 +2,8 @@
   
   var width = 24; // width of the widget
    function draw() {
-     var temp  = new Temp();
-     var t;
+     var date  = new Date();
+     var t=0;
     g.reset(); 
     g.setFontAlign(0,0); // center fonts
   function getTemp() { 
@@ -16,8 +16,6 @@
       var idx = d.indexOf(String.fromCharCode(0x09,0x18));
       if (idx>=0) {
    var t = d.charCodeAt(idx+2);      
-     g.setFont("6x8",2.5);
-    g.drawString("M"+t+"c", this.x+width+4, this.y+18);
       }
     }
    }, 2000 /* receive for 2000ms */);
@@ -25,13 +23,15 @@
 // look once a minute for temperature
 setInterval(getTemp, 20000);
    }
-   
+   g.setFont("6x8",2.5);
+        print(t);
+    g.drawString("M"+t+"c", this.x+width+4, this.y+18);
   setInterval(function() {
  WIDGETS.date.draw(WIDGETS.date);
-  }, 10*1000); // update every 30 secs
+  }, 30*1000); // update every 30 secs
 
   // add your widget
   WIDGETS.date={
-    area:"br", width: width, draw:draw // called to draw the widget
+    area:"bl", width: width, draw:draw // called to draw the widget
   }; 
 })();
