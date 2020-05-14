@@ -6,7 +6,7 @@
      var t;
     g.reset(); 
     g.setFontAlign(0,0); // center fonts
-  function getTemp(t) { 
+  function getTemp() { 
   NRF.findDevices(function(devices) {
     var found = false;
     for (var i in devices) {
@@ -24,10 +24,8 @@
 }
 // look once a minute for temperature
 setInterval(getTemp, 20000);
-     return t;
    }
-   g.setFont("6x8",2.5);
-   g.drawString("M"+t+"c", this.x+width+4, this.y+18);
+   
   setInterval(function() {
  WIDGETS.date.draw(WIDGETS.date);
   }, 10*1000); // update every 30 secs
