@@ -3,7 +3,7 @@
   var width = 24; // width of the widget
    function draw() {
      var date  = new Date();
-     var t=0;
+     var t=5;
     g.reset(); 
     g.setFontAlign(0,0); // center fonts
   function getTemp() { 
