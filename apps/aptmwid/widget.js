@@ -34,4 +34,4 @@ setInterval(getTemp, 20000);
   WIDGETS.date={
     area:"br", width: width, draw:draw // called to draw the widget
   }; 
-})()
+})();
