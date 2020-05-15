@@ -36,7 +36,7 @@ function getTemp() {
    }, 2000 /* receive for 3000ms */);
  }
 // look once a minute for temperature
-setInterval(getTemp, 60000);
+setInterval(getTemp, 20000);
 
 
 
@@ -181,7 +181,7 @@ function drawEverythingElse() {
   var y = Y + 2*CHARW + CHARP;
   var d = new Date();
   g.reset();
-  g.setFont("6x8");
+  g.setFont("Vector",20);
   g.setFontAlign(-1,-1);
   g.drawString(("0"+d.getSeconds()).substr(-2), x, y-8, true);
   // meridian
