@@ -132,9 +132,9 @@ function draw(lastText,thisText,n) {
     var l = DIGITS[ch](chn,lastCh==5 && thisCh==0);
     l.forEach(c=>{
       if (c[0]!=c[2]) // horiz
-        buf.fillRect(x+c[0]*s,y+c[1]*s-p,x+c[2]*s,y+c[3]*s+p);
+     //   buf.fillRect(x+c[0]*s,y+c[1]*s-p,x+c[2]*s,y+c[3]*s+p);
       else if (c[1]!=c[3]) // vert
-        buf.fillRect(x+c[0]*s-p,y+c[1]*s,x+c[2]*s+p,y+c[3]*s);
+      //  buf.fillRect(x+c[0]*s-p,y+c[1]*s,x+c[2]*s+p,y+c[3]*s);
     });
     if (thisCh==":") x-=4;
     x+=s+p+7;
