@@ -143,11 +143,13 @@ function draw(lastText,thisText,n) {
   var d = new Date();
   buf.setFont("6x8",2);
   buf.setFontAlign(-1,-1);
-  buf.drawString(("0"+d.getSeconds()).substr(-2), x, y-8);
+  buf.drawString(("0"+d.getSeconds()).substr(-2), x,y-8);
+  //x,y-8
   // date
   buf.setFontAlign(0,-1);
   var date = locale.date(d,false);
-  buf.drawString(date, buf.getWidth()/2, y+5);
+  buf.drawString(date, 100,130);
+  //buf.getWidth()/2, y+5
   flip();
 }
 function getTemp() { 
@@ -165,7 +167,7 @@ function getTemp() {
         t = d.charCodeAt(idx+2);
         print(t);
         g.setFont("6x8",2.7);
-       g.drawString("Meds "+t+" c", g.getWidth()/2,    g.getHeight()/2+40);
+       g.drawString("Meds "+t+" c", 100,    150;
          }
       g.flip();
     }
