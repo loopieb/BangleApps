@@ -143,17 +143,19 @@ function draw(lastText,thisText,n) {
   var d = new Date();
   buf.setFont("6x8",2);
   buf.setFontAlign(-1,-1);
-  buf.drawString(("0"+d.getSeconds()).substr(-2), x,y-8);
+  buf.drawString(("0"+d.getSeconds()).substr(-4), x,y-8);
   //x,y-8
   // date
   buf.setFontAlign(0,-1);
   var date = locale.date(d,false);
-  buf.drawString(date, 100,130);
+  buf.drawString(date, w-20,h+10);
   //buf.getWidth()/2, y+5
   flip();
 }
 function getTemp() { 
- // var d =0; 
+ // var d =0;
+ var h=g.getHeight()/2;
+ var w=g.getWidth()/2; 
  g.reset();
  g.clear();
   NRF.findDevices(function(devices) {
@@ -167,7 +169,7 @@ function getTemp() {
         t = d.charCodeAt(idx+2);
         print(t);
         g.setFont("6x8",2.7);
-       g.drawString("Meds "+t+" c", 100,    150;
+       g.drawString("Meds "+t+" c", w-90, h+30);
          }
       g.flip();
     }
