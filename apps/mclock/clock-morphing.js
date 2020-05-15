@@ -147,7 +147,7 @@ function draw(lastText,thisText,n) {
   // date
   buf.setFontAlign(0,-1);
   var date = locale.date(d,false);
-  buf.drawString(date, buf.getWidth()/2, y+8);
+  buf.drawString(date, buf.getWidth()/2, y+15);
   flip();
 }
 function getTemp() { 
@@ -165,18 +165,13 @@ function getTemp() {
         t = d.charCodeAt(idx+2);
         print(t);
         g.setFont("6x8",2.5);
-       g.drawString("Meds "+t+" c", g.getWidth()/2,    g.getHeight()/2);
+       g.drawString("Meds "+t+" c", g.getWidth()/2,    g.getHeight()/2+40);
          }
     }
    }, 2000 /* receive for 3000ms */);
  }
 // look once a minute for temperature
 setInterval(getTemp, 20000);
-
-
-
-
-
 
 /* Show the current time, and animate if needed */
 function showTime() {
