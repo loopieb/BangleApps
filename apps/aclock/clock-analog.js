@@ -4,7 +4,7 @@ let Bangle;
 
 function getTemp() { 
  // var d =0;
- var ht=g.getHeight()/2+40;
+ var ht=g.getHeight()/2+20;
  var wt=g.getWidth()/2-50; 
  g.drawString("Meds "+t+" c", wt, ht);
  g.reset();
