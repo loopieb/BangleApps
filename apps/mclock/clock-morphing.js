@@ -168,7 +168,7 @@ function getTemp() {
       if (idx>=0) {
         t = d.charCodeAt(idx-2);
         print(t);
-        g.setFont("6x8",3);
+        g.setFont("Vector",23);
        g.drawString("Meds "+t+" c", wt-60, ht+30);
          }
       g.flip();
