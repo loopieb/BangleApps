@@ -148,7 +148,7 @@ function draw(lastText,thisText,n) {
   // date
   buf.setFontAlign(0,-1);
   var date = locale.date(d,false);
-  buf.drawString(date, w-20,h+10);
+  buf.drawString(date, buf.getWidth()/2, y+5);
   //buf.getWidth()/2, y+5
   flip();
 }
