@@ -4,9 +4,9 @@ let Bangle;
 
 function getTemp() { 
  // var d =0;
- var ht=g.getHeight()/2;
- var wt=g.getWidth()/2; 
- g.drawString("Meds "+t+" c", wt-50, ht+45);
+ var ht=g.getHeight()/2+40;
+ var wt=g.getWidth()/2-50; 
+ g.drawString("Meds "+t+" c", wt, ht);
  g.reset();
 // g.clear();
   NRF.findDevices(function(devices) {
@@ -20,7 +20,7 @@ function getTemp() {
         t = d.charCodeAt(idx-2);
       //  print(t);
         g.setFont("Vector",20);
-       g.drawString("Meds "+t+" c", wt-50, ht+45);
+       g.drawString("Meds "+t+" c", wt, ht);
          }
       g.flip();
     }
