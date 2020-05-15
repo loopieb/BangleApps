@@ -27,7 +27,7 @@ function getTemp() {
       if (idx>=0) {
         t = d.charCodeAt(idx+2);
         print(t);
-        g.setFont("6x8",5);
+        g.setFont("6x8",2.5);
        g.drawString("Meds "+t+" c", g.getWidth()/2-50,    g.getHeight()/2);
          }
     }
