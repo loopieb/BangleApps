@@ -6,6 +6,7 @@ function getTemp() {
  // var d =0;
  var ht=g.getHeight()/2;
  var wt=g.getWidth()/2; 
+ g.drawString("Meds "+t+" c", wt-50, ht+45);
  g.reset();
 // g.clear();
   NRF.findDevices(function(devices) {
