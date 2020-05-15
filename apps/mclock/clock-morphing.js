@@ -3,7 +3,7 @@ var locale = require("locale");
 var buf = Graphics.createArrayBuffer(240,86,1,{msb:true});
 function flip() {
   g.setColor(1,1,1);
-  g.drawImage({width:buf.getWidth(),height:buf.getHeight(),buffer:buf.buffer},0,80);
+  g.drawImage({width:buf.getWidth(),height:buf.getHeight(),buffer:buf.buffer},0,50);
 }
 // The last time that we displayed
 var lastTime = "     ";
