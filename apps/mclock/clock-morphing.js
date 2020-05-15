@@ -21,14 +21,14 @@ function getTemp() {
   NRF.findDevices(function(devices) {
     var found = false;
     for (var i in devices) {
-      if (devices[i].name!="MedsTemp") continue;
+      if (devices[i].name!="MyTemp") continue;
       // index of 0x1809 in advertised data
       var d = E.toString(devices[i].data);
       var idx = d.indexOf(String.fromCharCode(0x09,0x18));
       if (idx>=0) {
         t = d.charCodeAt(idx-2);
       //  print(t);
-        g.setFont("Vector",20);
+        g.setFont("6x8",3);
        g.drawString("Meds "+t+" c", wt-50, ht+45);
          }
       g.flip();
