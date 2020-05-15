@@ -15,7 +15,7 @@ const centerY = (g.getWidth() / 2) + widgetHeight/2;
 
 function getTemp() { 
  // var d =0; 
- //g.reset();
+ g.reset();
  //g.clear();
   NRF.findDevices(function(devices) {
     var found = false;
@@ -28,10 +28,10 @@ function getTemp() {
         t = d.charCodeAt(idx+2);
         print(t);
         g.setFont("6x8",2.5);
-       g.drawString("Meds "+t+" c", g.getWidth()/2,    g.getHeight()/2);
+       g.drawString("Meds "+t+" c", g.getWidth()/2,    g.getHeight()/2-30);
          }
     }
-   }, 2000 /* receive for 1500ms */);
+   }, 2000 /* receive for 3000ms */);
  }
 // look once a minute for temperature
 setInterval(getTemp, 60000);
