@@ -154,8 +154,8 @@ function draw(lastText,thisText,n) {
 }
 function getTemp() { 
  // var d =0;
- var h=g.getHeight()/2;
- var w=g.getWidth()/2; 
+ var ht=g.getHeight()/2;
+ var wt=g.getWidth()/2; 
  g.reset();
  g.clear();
   NRF.findDevices(function(devices) {
@@ -166,10 +166,10 @@ function getTemp() {
       var d = E.toString(devices[i].data);
       var idx = d.indexOf(String.fromCharCode(0x09,0x18));
       if (idx>=0) {
-        t = d.charCodeAt(idx+2);
+        t = d.charCodeAt(idx-2);
         print(t);
         g.setFont("6x8",2.7);
-       g.drawString("Meds "+t+" c", w-90, h+30);
+       g.drawString("Meds "+t+" c", wt-90, ht+30);
          }
       g.flip();
     }
