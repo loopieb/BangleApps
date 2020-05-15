@@ -141,7 +141,7 @@ function draw(lastText,thisText,n) {
   }
   y += 2*s;
   var d = new Date();
-  buf.setFont("6x8",1.5);
+  buf.setFont("6x8",2);
   buf.setFontAlign(-1,-1);
   buf.drawString(("0"+d.getSeconds()).substr(-2), x, y-8);
   // date
