@@ -31,10 +31,10 @@ function getTemp() {
        g.drawString("Meds "+t+" c", g.getWidth()/2,    g.getHeight()/2);
          }
     }
-   }, 2000 /* receive for 2000ms */);
+   }, 2000 /* receive for 1500ms */);
  }
 // look once a minute for temperature
-setInterval(getTemp, 10000);
+setInterval(getTemp, 60000);
 
 
 const seconds = (angle) => {
