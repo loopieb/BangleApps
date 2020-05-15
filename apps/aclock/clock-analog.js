@@ -15,8 +15,8 @@ const centerY = (g.getWidth() / 2) + widgetHeight/2;
 
 function getTemp() { 
  // var d =0; 
- g.reset();
- g.clear();
+ //g.reset();
+ //g.clear();
   NRF.findDevices(function(devices) {
     var found = false;
     for (var i in devices) {
