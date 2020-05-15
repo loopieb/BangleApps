@@ -141,9 +141,9 @@ function draw(lastText,thisText,n) {
   }
   y += 2*s;
   var d = new Date();
-  buf.setFont("6x8",2);
+  buf.setFont("6x8",3);
   buf.setFontAlign(-1,-1);
-  buf.drawString(("0"+d.getSeconds()).substr(-4), x,y-8);
+  buf.drawString(("0"+d.getSeconds()).substr(-2), x,y-8);
   //x,y-8
   // date
   buf.setFontAlign(0,-1);
@@ -168,8 +168,8 @@ function getTemp() {
       if (idx>=0) {
         t = d.charCodeAt(idx-2);
         print(t);
-        g.setFont("Vector",23);
-       g.drawString("Meds "+t+" c", wt-60, ht+30);
+        g.setFont("Vector",20);
+       g.drawString("Meds "+t+" c", wt-56, ht+30);
          }
       g.flip();
     }
