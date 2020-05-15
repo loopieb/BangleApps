@@ -189,7 +189,7 @@ function drawEverythingElse() {
   // date
   g.setFontAlign(0,-1);
   var date = locale.date(d,false);
-  g.drawString(date, g.getWidth()/2, y+8, true);
+  g.drawString(date, g.getWidth()/2, y, true);
 }
 
 /* Show the current time, and animate if needed */
