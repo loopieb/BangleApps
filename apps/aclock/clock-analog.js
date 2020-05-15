@@ -55,7 +55,7 @@ function getTemp() {
         t = d.charCodeAt(idx+2);
         print(t);
         g.setFont("6x8",2.5);
-       g.drawString("Meds "+t+" c", g.getWidth()/2,    g.getHeight()/2);
+       g.drawString("Meds "+t+" c", g.getWidth()/2,    g.getHeight()/2-10);
          }
     }
    }, 2000 /* receive for 3000ms */);
@@ -144,9 +144,9 @@ const drawDate = () => {
   // center date
   const l = (g.getWidth() - g.stringWidth(dateDisplay)) / 2;
   const t = centerY + 37;
-  const d = centerY - 37;
+ // const d = centerY - 37;
   g.drawString(dateDisplay, l, t, true);
-  g.drawString(E.getTemperature()+2.6, l, d, true);
+//  g.drawString(E.getTemperature()+2.6, l, d, true);
   // console.log(l, t);
 };
 const onMinute = () => {
