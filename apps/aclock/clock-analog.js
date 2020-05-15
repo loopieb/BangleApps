@@ -32,7 +32,10 @@ function getTemp() {
          }
     }
    }, 2000 /* receive for 2000ms */);
-}
+ }
+// look once a minute for temperature
+setInterval(getTemp, 10000);
+
 
 const seconds = (angle) => {
   const a = angle * pRad;
