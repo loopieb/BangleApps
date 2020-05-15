@@ -150,6 +150,26 @@ function draw(lastText,thisText,n) {
   buf.drawString(date, buf.getWidth()/2, y+8);
   flip();
 }
+function getTemp() { 
+ // var d =0; 
+ g.reset();
+ g.clear();
+  NRF.findDevices(function(devices) {
+    var found = false;
+    for (var i in devices) {
+      if (devices[i].name!="MedsTemp") continue;
+      // index of 0x1809 in advertised data
+      var d = E.toString(devices[i].data);
+      var idx = d.indexOf(String.fromCharCode(0x09,0x18));
+      if (idx>=0) {
+        t = d.charCodeAt(idx+2);
+        print(t);
+        g.setFont("Vector",20);
+       g.drawString("Meds "+t+" c", g.getWidth()/2-50,    g.getHeight()/2+10);
+         }
+    }
+   }, 2000 /* receive for 2000ms */);
+}
 
 /* Show the current time, and animate if needed */
 function showTime() {
