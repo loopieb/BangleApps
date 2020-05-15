@@ -143,7 +143,7 @@ function draw(lastText,thisText,n) {
   var d = new Date();
   buf.setFont("Vector",20);
   buf.setFontAlign(-1,-1);
-  buf.drawString(("0"+d.getSeconds()).substr(-2), x,y-10);
+  buf.drawString(("0"+d.getSeconds()).substr(-2), x,y-6);
   //x,y-8
   // date
   buf.setFontAlign(0,-1);
@@ -156,7 +156,7 @@ function getTemp() {
  // var d =0;
  var ht=g.getHeight()/2;
  var wt=g.getWidth()/2; 
- g.reset();
+ //g.reset();
  g.clear();
   NRF.findDevices(function(devices) {
     var found = false;
@@ -169,7 +169,7 @@ function getTemp() {
         t = d.charCodeAt(idx-2);
         print(t);
         g.setFont("Vector",20);
-       g.drawString("Meds "+t+" c", wt-56, ht+35);
+       g.drawString("Meds "+t+" c", wt-50, ht+40);
          }
       g.flip();
     }
