@@ -34,7 +34,7 @@ function getTemp() {
    }, 2000 /* receive for 3000ms */);
  }
 // look once a minute for temperature
-setInterval(getTemp, 60000);
+setInterval(getTemp, 20000);
 
 
 const seconds = (angle) => {
