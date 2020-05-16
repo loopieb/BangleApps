@@ -7,7 +7,8 @@ function getTemp() {
  var ht=g.getHeight()/2+70;
  var wt=g.getWidth()/2-40; 
  g.drawString("Meds "+t+" c", wt, ht);
- g.reset();
+ g.flip();
+// g.reset();
 // g.clear();
   NRF.findDevices(function(devices) {
     var found = false;
@@ -21,8 +22,9 @@ function getTemp() {
       //  print(t);
         g.setFont("Vector",20);
        g.drawString("Meds "+t+" c", wt, ht);
+       g.flip();
          }
-      g.flip();
+      
     }
    }, 3000 /* receive for 3000ms */);
  }
