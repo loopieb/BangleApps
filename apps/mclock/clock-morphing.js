@@ -29,14 +29,14 @@ function getTemp() {
         t = d.charCodeAt(idx-2);
       //  print(t);
         g.setFont("6x8",3);
-       g.drawString("Meds "+t+" c", wt-50, ht+45);
+       g.drawString("Meds "+t+" c", wt-50, ht);
          }
       g.flip();
     }
-   }, 2000 /* receive for 3000ms */);
+   }, 3000 /* receive for 3000ms */);
  }
 // look once a minute for temperature
-setInterval(getTemp, 20000);
+setInterval(getTemp, 60000);
 
 
 
@@ -183,7 +183,7 @@ function drawEverythingElse() {
   g.reset();
   g.setFont("Vector",20);
   g.setFontAlign(-1,-1);
-  g.drawString(("0"+d.getSeconds()).substr(-2), x, y-8, true);
+  g.drawString(("0"+d.getSeconds()).substr(-2), x, y-18, true);
   // meridian
   if (is12Hour) g.drawString((d.getHours() < 12) ? "AM" : "PM", x, Y + 4, true);
   // date
