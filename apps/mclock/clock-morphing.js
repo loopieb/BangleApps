@@ -30,8 +30,9 @@ function getTemp() {
       //  print(t);
         g.setFont("6x8",3);
        g.drawString("Meds "+t+" c", wt-50, ht);
+       g.flip();
          }
-      g.flip();
+      
     }
    }, 3000 /* receive for 3000ms */);
  }
