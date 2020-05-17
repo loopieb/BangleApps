@@ -31,7 +31,7 @@ g.clear(reset);
         t = d.charCodeAt(idx-2);
         g.setFont("6x8",2.5);
        g.drawString("Meds "+t+" c", wt, ht,true);
-       g.drawString("*",g.getWidth()/2,g.getHeight()/2,true);
+   //    g.drawString("*",g.getWidth()/2,g.getHeight()/2,true);
        g.flip();
       }      
     }
@@ -186,7 +186,7 @@ function drawEverythingElse() {
   g.setFont("6x8",2.7);
   g.setFontAlign(-1,-1);
   g.drawString(("0"+d.getSeconds()).substr(-2), x, y-8, true);
-  g.drawString("*",g.getWidth()/2,g.getHeight()/2,true);
+  g.drawString("*",g.getWidth()/2,g.getHeight()/2+20,true);
   // meridian
   if (is12Hour) g.drawString((d.getHours() < 12) ? "AM" : "PM", x, Y + 4, true);
   // date
