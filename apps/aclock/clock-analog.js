@@ -1,14 +1,14 @@
 // eliminate ide undefined errors
 let g;
 let Bangle;
-g.drawString("*",(g.getWidth()/2)-80,(g.getHeight()/2)-50,true);
+//g.drawString("*",(g.getWidth()/2)-80,(g.getHeight()/2)-50,true);
 function getTemp() { 
- g.drawString("*",(g.getWidth()/2)-80,(g.getHeight()/2)-50,true);
+ //g.drawString("*",(g.getWidth()/2)-80,(g.getHeight()/2)-50,true);
  var d =0;
  var ht=(g.getHeight()/2);
  var wt=(g.getWidth()/2); 
 // g.drawString("Meds "+t+" c#", wt, ht,true);
- g.flip();
+// g.flip();
 g.reset();
 //g.clear(reset);
   NRF.findDevices(function(devices) {
@@ -21,7 +21,7 @@ g.reset();
       if (idx>=0) {
         t = d.charCodeAt(idx-2);
         g.setFont("6x8",2.5);
-       g.drawString("Meds "+t+" c£", wt-50, ht-50,true);
+       g.drawString("Meds "+t+"c", wt-50, ht-50,solid);
        
        g.flip();
       }      
