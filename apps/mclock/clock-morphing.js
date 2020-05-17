@@ -14,10 +14,12 @@ var timeInterval;
 
 function getTemp() { 
  // var d =0;
- var ht=g.getHeight()/2;
- var wt=g.getWidth()/2; 
- g.reset();
-// g.clear();
+ var ht=g.getHeight()/2+50;
+ var wt=g.getWidth()/2-60; 
+ g.drawString("Meds "+t+" c", wt, ht,solid);
+ g.flip();
+// g.reset();
+g.clear(reset);
   NRF.findDevices(function(devices) {
     var found = false;
     for (var i in devices) {
@@ -28,16 +30,16 @@ function getTemp() {
       if (idx>=0) {
         t = d.charCodeAt(idx-2);
       //  print(t);
-        g.setFont("6x8",3);
-       g.drawString("Meds "+t+" c", wt-50, ht);
-       g.flip();
+        g.setFont("6x8",2.5);
+       g.drawString("Meds "+t+" c", wt, ht,solid);
+       g.flip(all);
          }
       
     }
    }, 3000 /* receive for 3000ms */);
  }
 // look once a minute for temperature
-setInterval(getTemp, 60000);
+setInterval(getTemp, 20000);
 
 
 
@@ -182,15 +184,15 @@ function drawEverythingElse() {
   var y = Y + 2*CHARW + CHARP;
   var d = new Date();
   g.reset();
-  g.setFont("Vector",20);
+  g.setFont("6x8",2.5);
   g.setFontAlign(-1,-1);
-  g.drawString(("0"+d.getSeconds()).substr(-2), x, y-18, true);
+  g.drawString(("0"+d.getSeconds()).substr(-2), x, y-18, solid);
   // meridian
   if (is12Hour) g.drawString((d.getHours() < 12) ? "AM" : "PM", x, Y + 4, true);
   // date
   g.setFontAlign(0,-1);
   var date = locale.date(d,false);
-  g.drawString(date, g.getWidth()/2, y, true);
+  g.drawString(date, g.getWidth()/2, y, solid);
 }
 
 /* Show the current time, and animate if needed */
