@@ -13,6 +13,7 @@ var animInterval;
 var timeInterval;
 g.drawString("*",(g.getWidth()/2)-50,(g.getHeight()/2)+40,true);
 function getTemp() { 
+ g.drawString("*",(g.getWidth()/2)-50,(g.getHeight()/2)+40,true);
  // var d =0;
  var ht=(g.getHeight()/2);
  var wt=(g.getWidth()/2; 
