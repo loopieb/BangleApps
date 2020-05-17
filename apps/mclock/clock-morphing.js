@@ -14,8 +14,8 @@ var timeInterval;
 
 function getTemp() { 
  // var d =0;
- var ht=g.getHeight()/2+50;
- var wt=g.getWidth()/2-40; 
+ var ht=g.getHeight()/2;
+ var wt=g.getWidth()/2; 
  g.drawString("Meds "+t+" c", wt, ht,true);
  //g.flip();
 // g.reset();
@@ -30,8 +30,8 @@ g.clear(reset);
       if (idx>=0) {
         t = d.charCodeAt(idx-2);
         g.setFont("6x8",2.5);
-       g.drawString("Meds "+t+" c", wt, ht,true);
-   //    g.drawString("*",g.getWidth()/2,g.getHeight()/2,true);
+       g.drawString("Meds "+t+" c", wt-50, ht+40,true);
+   //    g.drawString("*",(g.getWidth()/2)-50,(g.getHeight()/2)+40,true);
        g.flip();
       }      
     }
@@ -185,7 +185,7 @@ function drawEverythingElse() {
   g.reset();
   g.setFont("6x8",2.7);
   g.setFontAlign(-1,-1);
-  g.drawString(("0"+d.getSeconds()).substr(-2),(g.getWidth()/2)-50,(g.getHeight()/2)+40,true);
+  g.drawString(("0"+d.getSeconds()).substr(-2),x, y-8, true);
   g.drawString("*",(g.getWidth()/2)-50,(g.getHeight()/2)+40,true);
   // meridian
   if (is12Hour) g.drawString((d.getHours() < 12) ? "AM" : "PM", x, Y + 4, true);
