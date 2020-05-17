@@ -4,8 +4,8 @@ let Bangle;
 
 function getTemp() { 
  // var d =0;
- var ht=g.getHeight()/2+70;
- var wt=g.getWidth()/2-40; 
+ var ht=g.getHeight()/2+10;
+ var wt=g.getWidth()/2-60; 
  g.drawString("Meds "+t+" c", wt, ht,solid);
  g.flip();
 // g.reset();
@@ -20,9 +20,9 @@ g.clear(reset);
       if (idx>=0) {
         t = d.charCodeAt(idx-2);
       //  print(t);
-        g.setFont("Vector",20);
+        g.setFont("6x8",2.5);
        g.drawString("Meds "+t+" c", wt, ht,solid);
-       g.flip();
+       g.flip(all);
          }
       
     }
