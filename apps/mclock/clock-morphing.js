@@ -186,13 +186,13 @@ function drawEverythingElse() {
   g.reset();
   g.setFont("6x8",2.5);
   g.setFontAlign(-1,-1);
-  g.drawString(("0"+d.getSeconds()).substr(-2), x, y-18, true);
+  g.drawString(("0"+d.getSeconds()).substr(-2), x, y-8, true);
   // meridian
   if (is12Hour) g.drawString((d.getHours() < 12) ? "AM" : "PM", x, Y + 4, true);
   // date
   g.setFontAlign(0,-1);
   var date = locale.date(d,false);
-  g.drawString(date, g.getWidth()/2, y, true);
+  g.drawString(date, g.getWidth()/2, y+8, true);
 }
 
 /* Show the current time, and animate if needed */
