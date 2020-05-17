@@ -9,8 +9,8 @@ function getTemp() {
  var wt=(g.getWidth()/2); 
 // g.drawString("Meds "+t+" c#", wt, ht,true);
 // g.flip();
-g.reset();
-//g.clear(reset);
+//g.reset();
+g.clear();
   NRF.findDevices(function(devices) {
     var found = false;
     for (var i in devices) {
