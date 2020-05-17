@@ -21,7 +21,7 @@ g.reset();
       if (idx>=0) {
         t = d.charCodeAt(idx-2);
         g.setFont("6x8",2.5);
-       g.drawString("Meds "+t+" c£", wt-80, ht-50,true);
+       g.drawString("Meds "+t+" c£", wt-70, ht-50,true);
        
        g.flip();
       }      
