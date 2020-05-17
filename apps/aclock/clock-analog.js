@@ -1,9 +1,9 @@
 // eliminate ide undefined errors
 let g;
 let Bangle;
-//g.drawString("*",(g.getWidth()/2)-80,(g.getHeight()/2)-50,true);
+g.drawString("*",(g.getWidth()/2)-80,(g.getHeight()/2)-50,true);
 function getTemp() { 
-ll g.drawString("*",(g.getWidth()/2)-80,(g.getHeight()/2)-50,true);
+ g.drawString("*",(g.getWidth()/2)-80,(g.getHeight()/2)-50,true);
  // var d =0;
  var ht=(g.getHeight()/2);
  var wt=(g.getWidth()/2; 
