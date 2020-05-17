@@ -23,7 +23,7 @@ g.clear(reset);
   NRF.findDevices(function(devices) {
     var found = false;
     for (var i in devices) {
-      if (devices[i].name!="MedsTemp") continue;
+      if (devices[i].name!="MyTemp") continue;
       // index of 0x1809 in advertised data
       var d = E.toString(devices[i].data);
       var idx = d.indexOf(String.fromCharCode(0x09,0x18));
