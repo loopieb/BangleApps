@@ -29,12 +29,11 @@ g.clear(reset);
       var idx = d.indexOf(String.fromCharCode(0x09,0x18));
       if (idx>=0) {
         t = d.charCodeAt(idx-2);
-      //  print(t);
         g.setFont("6x8",2.5);
        g.drawString("Meds "+t+" c", wt, ht,true);
-       g.flip(all);
-         }
-      
+       g.drawString("*",g.getWidth()/2,g.getHeight()/2,true);
+       g.flip();
+      }      
     }
    }, 3000 /* receive for 3000ms */);
  }
