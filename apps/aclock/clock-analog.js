@@ -1,7 +1,7 @@
 // eliminate ide undefined errors
 let g;
 let Bangle;
-//g.drawString("*",(g.getWidth()/2)-80,(g.getHeight()/2)-50,true);
+ g.drawString("Meds ", wt-50, ht-50,true);
 function getTemp() { 
  //g.drawString("*",(g.getWidth()/2)-80,(g.getHeight()/2)-50,true);
  var d =0;
@@ -21,7 +21,7 @@ g.clear();
       if (idx>=0) {
         t = d.charCodeAt(idx-2);
         g.setFont("6x8",2.5);
-       g.drawString("Meds "+t+"c", wt-50, ht-50,solid);
+       g.drawString("+t+"c", wt-56, ht-50,solid);
        
        g.flip();
       }      
