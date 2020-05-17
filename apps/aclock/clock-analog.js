@@ -3,28 +3,28 @@ let g;
 let Bangle;
 
 function getTemp() { 
+ g.drawString("*",(g.getWidth()/2)-50,(g.getHeight()/2)+40,true);
  // var d =0;
- var ht=g.getHeight()/2+10;
- var wt=g.getWidth()/2-60; 
- g.drawString("Meds "+t+" c", wt, ht,solid);
- g.flip();
+ var ht=(g.getHeight()/2);
+ var wt=(g.getWidth()/2; 
+ g.drawString("Meds "+t+" c", wt, ht,true);
+ //g.flip();
 // g.reset();
 g.clear(reset);
   NRF.findDevices(function(devices) {
     var found = false;
     for (var i in devices) {
-      if (devices[i].name!="MedsTemp") continue;
+      if (devices[i].name!="MyTemp") continue;
       // index of 0x1809 in advertised data
       var d = E.toString(devices[i].data);
       var idx = d.indexOf(String.fromCharCode(0x09,0x18));
       if (idx>=0) {
         t = d.charCodeAt(idx-2);
-      //  print(t);
         g.setFont("6x8",2.5);
-       g.drawString("Meds "+t+" c", wt, ht,solid);
-       g.flip(all);
-         }
-      
+       g.drawString("Meds "+t+" c", wt-50, ht+60,true);
+       
+       g.flip();
+      }      
     }
    }, 3000 /* receive for 3000ms */);
  }
