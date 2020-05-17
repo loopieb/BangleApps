@@ -7,10 +7,10 @@ function getTemp() {
  var d =0;
  var ht=(g.getHeight()/2);
  var wt=(g.getWidth()/2); 
-// g.drawString("Meds "+t+" c#", wt, ht,true);
-// g.flip();
+
+ g.flip();
 //g.reset();
-g.clear();
+//g.clear();
   NRF.findDevices(function(devices) {
     var found = false;
     for (var i in devices) {
