@@ -15,7 +15,7 @@ var a = [37,37,37,37,37,37,37,37];
   // print(sum,b+"c");
  //  print(b,a.length);
 
-    g.setFont("6x8",2.7);
+    g.setFont("6x8",2.6);
     g.drawString(b+"C", this.x+width+6, this.y+12,true);
   }
   setInterval(function() {
