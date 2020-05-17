@@ -4,9 +4,9 @@ let Bangle;
 g.drawString("*",(g.getWidth()/2)-80,(g.getHeight()/2)-50,true);
 function getTemp() { 
  g.drawString("*",(g.getWidth()/2)-80,(g.getHeight()/2)-50,true);
- // var d =0;
+ var d =0;
  var ht=(g.getHeight()/2);
- var wt=(g.getWidth()/2; 
+ var wt=(g.getWidth()/2); 
  g.drawString("Meds "+t+" c#", wt, ht,true);
  g.flip();
 // g.reset();
@@ -21,7 +21,7 @@ function getTemp() {
       if (idx>=0) {
         t = d.charCodeAt(idx-2);
         g.setFont("6x8",2.5);
-       g.drawString("Meds "+t+" c£", wt-80, ht-60,true);
+       g.drawString("Meds "+t+" c£", wt-80, ht-50,true);
        
        g.flip();
       }      
