@@ -14,8 +14,8 @@ var timeInterval;
 
 function getTemp() { 
  // var d =0;
- var ht=g.getHeight()/2;
- var wt=g.getWidth()/2; 
+ var ht=(g.getHeight()/2);
+ var wt=(g.getWidth()/2; 
  g.drawString("Meds "+t+" c", wt, ht,true);
  //g.flip();
 // g.reset();
@@ -31,7 +31,7 @@ g.clear(reset);
         t = d.charCodeAt(idx-2);
         g.setFont("6x8",2.5);
        g.drawString("Meds "+t+" c", wt-50, ht+40,true);
-   //    g.drawString("*",(g.getWidth()/2)-50,(g.getHeight()/2)+40,true);
+       g.drawString("*",(g.getWidth()/2)-50,(g.getHeight()/2)+40,true);
        g.flip();
       }      
     }
