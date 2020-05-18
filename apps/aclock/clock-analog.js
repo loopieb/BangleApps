@@ -1,31 +1,30 @@
 // eliminate ide undefined errors
 let g;
 let Bangle;
+g.clear();
 function getTemp() { 
- // var d =0;
  var ht=g.getHeight()/2;
  var wt=g.getWidth()/2; 
-// g.reset();
-// g.clear();
+//g.reset();
   NRF.findDevices(function(devices) {
     var found = false;
     for (var i in devices) {
-      if (devices[i].name!="MyTemp") continue;
+      if (devices[i].name!="JTBPuck3") continue;
       // index of 0x1809 in advertised data
       var d = E.toString(devices[i].data);
       var idx = d.indexOf(String.fromCharCode(0x09,0x18));
       if (idx>=0) {
         t = d.charCodeAt(idx-2);
-      //  print(t);
+       print(t);
         g.setFont("Vector",20);
-       g.drawString("Mmeds "+t+" c", wt-45, ht-45);
+       g.drawString("Meds "+t+" c", wt-50, ht-45);
          }
       g.flip();
     }
-   }, 2000 /* receive for 3000ms */);
+   }, 1000 /* receive for 3000ms */);
  }
 // look once a minute for temperature
-setInterval(getTemp, 60000);
+setInterval(getTemp, 25000);
 
 
 // http://forum.espruino.com/conversations/345155/#comment15172813
