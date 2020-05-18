@@ -24,7 +24,7 @@ function getTemp() {
    }, 1000 /* receive for 3000ms */);
  }
 // look once a minute for temperature
-setInterval(getTemp, 6000);
+setInterval(getTemp, 10000);
 
 
 // http://forum.espruino.com/conversations/345155/#comment15172813
