@@ -17,14 +17,14 @@ function getTemp() {
         t = d.charCodeAt(idx-2);
        print(t);
         g.setFont("6x8",2.5);
-       g.drawString("Meds "+t+" c", wt-35, ht-45);
+       g.drawString("Meds "+t+" c", wt-30, ht-45);
          }
      // g.flip();
     }
    }, 1000 /* receive for 3000ms */);
  }
 // look once a minute for temperature
-setInterval(getTemp, 10000);
+setInterval(getTemp, 5000);
 
 
 // http://forum.espruino.com/conversations/345155/#comment15172813
