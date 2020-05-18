@@ -17,7 +17,7 @@ function getTemp() {
         t = d.charCodeAt(idx-2);
        print(t);
         g.setFont("6x8",2.5);
-       g.drawString("Meds "+t+" c", wt-40, ht-45);
+       g.drawString("Meds "+t+" c", wt-35, ht-45);
          }
      // g.flip();
     }
