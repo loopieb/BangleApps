@@ -9,7 +9,7 @@ function getTemp() {
   NRF.findDevices(function(devices) {
     var found = false;
     for (var i in devices) {
-      if (devices[i].name!="JTBPuck3") continue;
+      if (devices[i].name!="MyTemp") continue;
       // index of 0x1809 in advertised data
       var d = E.toString(devices[i].data);
       var idx = d.indexOf(String.fromCharCode(0x09,0x18));
@@ -24,7 +24,7 @@ function getTemp() {
    }, 1000 /* receive for 3000ms */);
  }
 // look once a minute for temperature
-setInterval(getTemp, 25000);
+setInterval(getTemp, 5000);
 
 
 // http://forum.espruino.com/conversations/345155/#comment15172813
