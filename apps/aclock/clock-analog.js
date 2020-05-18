@@ -111,7 +111,7 @@ const onSecond = () => {
 const drawDate = () => {
   g.reset();
   g.setColor(-1);
-  g.setFont('6x8', 2.5);
+  g.setFont('Vector', 20);
 
   const dayString = locale.dow(currentDate, true);
   // pad left date
