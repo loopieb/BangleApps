@@ -16,7 +16,7 @@ var a = [37,37,37,37,37,37,37,37];
  //  print(b,a.length);
 
     g.setFont("6x8",2.5);
-    g.drawString(b+"C", this.x+width+6, this.y+12,true);
+    g.drawString(b+"C", this.x+width+6, this.y+10,true);
   }
   setInterval(function() {
     WIDGETS["date"].draw(WIDGETS["date"]);
