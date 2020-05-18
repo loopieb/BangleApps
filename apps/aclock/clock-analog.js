@@ -20,7 +20,7 @@ function getTemp() {
         g.setFont("Vector",20);
        g.drawString("Meds "+t+" c", wt-50, ht-45);
          }
-     // g.flip();
+      g.flip();
     }
    }, 2000 /* receive for 3000ms */);
  }
