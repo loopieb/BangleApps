@@ -19,12 +19,12 @@ function getTemp() {
         g.setFont("Vector",20);
        g.drawString("Meds "+t+" c", wt-50, ht-45);
          }
-      g.flip();
+     // g.flip();
     }
    }, 1000 /* receive for 3000ms */);
  }
 // look once a minute for temperature
-setInterval(getTemp, 5000);
+setInterval(getTemp, 6000);
 
 
 // http://forum.espruino.com/conversations/345155/#comment15172813
