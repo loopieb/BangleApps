@@ -5,12 +5,12 @@ function getTemp() {
  // var d =0;
  var ht=g.getHeight()/2;
  var wt=g.getWidth()/2; 
- g.reset();
+// g.reset();
 // g.clear();
   NRF.findDevices(function(devices) {
     var found = false;
     for (var i in devices) {
-      if (devices[i].name!="MedsTemp") continue;
+      if (devices[i].name!="MyTemp") continue;
       // index of 0x1809 in advertised data
       var d = E.toString(devices[i].data);
       var idx = d.indexOf(String.fromCharCode(0x09,0x18));
@@ -20,7 +20,7 @@ function getTemp() {
         g.setFont("Vector",20);
        g.drawString("Meds "+t+" c", wt-50, ht-45);
          }
-      g.flip();
+     // g.flip();
     }
    }, 2000 /* receive for 3000ms */);
  }
