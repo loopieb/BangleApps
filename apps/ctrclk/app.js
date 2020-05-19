@@ -118,9 +118,9 @@ function step () {
     drawDots(middleX + 41);
   }
   if (step.lastDate !== dateStr) {
-    g.clearRect(0, middleY - 22, 240, middleY - 12);
+  //  g.clearRect(0, middleY - 22, 240, middleY - 12);
     setSmallFont();
-  //  drawDate(dateStr);
+    drawDate(dateStr);
   }
   step.lastDate = dateStr;
   step.lastHour = hour;
