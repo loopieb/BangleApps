@@ -30,11 +30,9 @@ function setBigFont () {
 function setSmallFont () {
   g.setFontCustom(
     smallCustomFont[0],
-    48,
-    //32,
+    32,
     smallCustomFont[1],
-    58
-    //12
+    12
   );
 }
 
@@ -67,10 +65,9 @@ function drawLines () {
 function drawDate (str) {
   let maxSegmentWidth = 236;
   g.setColor(0.5, 0.5, 0.5);
-//  g.setColor(0.5, 0.5, 0.5);
+  g.setColor(0.5, 0.5, 0.5);
   g.drawString(str,g.getWidth()/2, (g.getHeight()/2)+50,
-    true);
-// g.setColor(1,1,1);
+    false);
 }
 
 function fixedDigits (numb) {
