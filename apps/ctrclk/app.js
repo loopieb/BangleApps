@@ -118,7 +118,7 @@ function step () {
     drawDots(middleX + 41);
   }
   if (step.lastDate !== dateStr) {
-  g.clearRect(0, middleY - 22, 120, middleY - 12);
+  g.clearRect(0, middleY - 22, 20, middleY - 12);
     setBigFont();
     drawDate(dateStr);
   }
