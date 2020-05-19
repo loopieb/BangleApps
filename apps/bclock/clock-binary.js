@@ -1,6 +1,3 @@
-const canvasWidth = 290;
-const numberOfColumns = 6;
-const drawFullGrid = false;
 g.clear();
 function getTemp() { 
  var ht=g.getHeight()/2;
@@ -28,6 +25,11 @@ function getTemp() {
 // look once a minute for temperature
 setInterval(getTemp, 5000);
 
+
+
+const canvasWidth = 290;
+const numberOfColumns = 6;
+const drawFullGrid = false;
 
 const colpos = canvasWidth / numberOfColumns - 10;
 const binSize = (canvasWidth / numberOfColumns) / 3;
