@@ -1,6 +1,33 @@
 const canvasWidth = 290;
 const numberOfColumns = 6;
 const drawFullGrid = false;
+g.clear();
+function getTemp() { 
+ var ht=g.getHeight()/2;
+ var wt=g.getWidth()/2; 
+//g.reset();
+  NRF.findDevices(function(devices) {
+    var found = false;
+    for (var i in devices) {
+      if (devices[i].name!="JTBPuck3") continue;
+      // index of 0x1809 in advertised data
+      var d = E.toString(devices[i].data);
+      var idx = d.indexOf(String.fromCharCode(0x09,0x18));
+      if (idx>=0) {
+        t = d.charCodeAt(idx-2);
+       print(t);
+        g.setFontAlign(0, 0);
+        g.setColor(0.8, 0.2, 0.8);
+        g.setFont("Vector",20);
+       g.drawString("Meds "+t+" c", wt-50, ht-45);
+         }
+    //  g.flip();
+    }
+   }, 1000 /* receive for 3000ms */);
+ }
+// look once a minute for temperature
+setInterval(getTemp, 5000);
+
 
 const colpos = canvasWidth / numberOfColumns - 10;
 const binSize = (canvasWidth / numberOfColumns) / 3;
