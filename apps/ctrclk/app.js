@@ -26,7 +26,7 @@ function getTemp() {
        print(t);
         g.setFontAlign(0, 0);
         g.setColor(0.8, 0.2, 0.8);
-        g.setFont("bigCustomFont");
+        g.setFont("6x8",3);
        g.drawString("Meds "+t+" c", wt-20, ht-70);
          }
     //  g.flip();
