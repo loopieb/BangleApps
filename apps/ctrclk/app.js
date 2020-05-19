@@ -40,7 +40,7 @@ function drawSegment (align, base, str) {
   let point = base;
   let maxSegmentWidth = g.stringWidth('00');
   if (align === 'r') {
-    point = base - g.stringWidth(str) /2;
+    point = base - g.stringWidth(str) / 2;
   }
   if (align === 'c') {
     point = base + (maxSegmentWidth / 2) -
