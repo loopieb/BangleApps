@@ -65,7 +65,6 @@ function drawLines () {
 function drawDate (str) {
   let maxSegmentWidth = 236;
   g.setColor(0.5, 0.5, 0.5);
- // g.setColor(0.5, 0.5, 0.5);
   g.drawString(str,g.getWidth()/2, (g.getHeight()/2)+50,
     false);
 }
@@ -121,7 +120,7 @@ function step () {
   if (step.lastDate !== dateStr) {
     g.clearRect(0, middleY - 22, 240, middleY - 12);
     setSmallFont();
-    drawDate(dateStr);
+  //  drawDate(dateStr);
   }
   step.lastDate = dateStr;
   step.lastHour = hour;
