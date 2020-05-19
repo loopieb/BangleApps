@@ -48,7 +48,7 @@ function drawSegment (align, base, str) {
     point = base + (maxSegmentWidth / 2) -
       (g.stringWidth(str) / 2);
   }
-  g.setColor(1, 1, 1);
+  g.setColor(0.5, 1, 0.5);
   g.drawString(str, point, middleY - 4, false);
 }
 
