@@ -62,13 +62,13 @@ function drawLines () {
 //g.drawLine(middleX - lineLength, lineY2, middleX + lineLength, lineY2);
 }
 
-//function drawDate (str) {
- // let maxSegmentWidth = 236;
-//  g.setColor(0.5, 0.5, 0.5);
-//  g.setColor(0.5, 0.5, 0.5);
- // g.drawString(str, (maxSegmentWidth) - (g.stringWidth(str)), middleY,
+function drawDate (str) {
+  let maxSegmentWidth = 236;
+  g.setColor(0.5, 0.5, 0.5);
+  g.setColor(0.5, 0.5, 0.5);
+  g.drawString(str, (maxSegmentWidth) - (g.stringWidth(str)), middleY,
     false);
-//}
+}
 
 function fixedDigits (numb) {
   if (numb < 10) {
