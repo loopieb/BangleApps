@@ -19,7 +19,7 @@ function getTemp() {
   NRF.findDevices(function(devices) {
     var found = false;
     for (var i in devices) {
-      if (devices[i].name!="JTBPuck3") continue;
+      if (devices[i].name!="JTBPuck1") continue;
       // index of 0x1809 in advertised data
       var d = E.toString(devices[i].data);
       var idx = d.indexOf(String.fromCharCode(0x09,0x18));
@@ -27,7 +27,7 @@ function getTemp() {
         t = d.charCodeAt(idx-2);
        print(t);
         g.setFont("Vector",20);
-       g.drawString("Meds "+t+" c", wt-30, ht+55);
+       g.drawString("Meds "+t+" c", wt-10, ht+55);
          }
     //  g.flip();
     }
