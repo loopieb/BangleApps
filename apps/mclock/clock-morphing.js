@@ -25,7 +25,8 @@ function getTemp() {
       var idx = d.indexOf(String.fromCharCode(0x09,0x18));
       if (idx>=0) {
         t = d.charCodeAt(idx-2);
-       print(t);
+      // print(t);
+       g.setFontAlign(0, 0);
         g.setFont("Vector",20);
        g.drawString("Meds "+t+" c", wt-10, ht+55);
          }
