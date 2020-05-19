@@ -66,8 +66,9 @@ function drawDate (str) {
   let maxSegmentWidth = 236;
   g.setColor(0.5, 0.5, 0.5);
   g.setColor(0.5, 0.5, 0.5);
-  g.drawString(str, (maxSegmentWidth) - (g.stringWidth(str)), middleY-8,
+  g.drawString(str,g.getWidth()/2, (g.getHeight()/2)+50,
     false);
+// g.setColor(1,1,1);
 }
 
 function fixedDigits (numb) {
