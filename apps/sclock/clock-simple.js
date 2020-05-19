@@ -1,7 +1,7 @@
 /* jshint esversion: 6 */
-const timeFontSize = 6;
+const timeFontSize = 20;
 const dateFontSize = 3;
-const gmtFontSize = 20;
+const gmtFontSize = 2;
 const font = "Vector";
 
 const xyCenter = g.getWidth() / 2;
