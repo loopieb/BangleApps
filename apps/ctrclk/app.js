@@ -58,8 +58,8 @@ function drawDots (center) {
 
 function drawLines () {
   g.setColor(0.5, 0.5, 0.5);
-  g.drawLine(middleX - lineLength, lineY1, middleX + lineLength, lineY1);
-  g.drawLine(middleX - lineLength, lineY2, middleX + lineLength, lineY2);
+//g.drawLine(middleX - lineLength, lineY1, middleX + lineLength, lineY1);
+//g.drawLine(middleX - lineLength, lineY2, middleX + lineLength, lineY2);
 }
 
 function drawDate (str) {
