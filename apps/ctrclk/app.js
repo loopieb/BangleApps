@@ -27,7 +27,7 @@ function getTemp() {
         g.setFontAlign(0, 0);
         g.setColor(0.8, 0.2, 0.8);
         g.setFont("Vector",20);
-       g.drawString("Meds "+t+" c", wt-50, ht-70);
+       g.drawString("Meds "+t+" c", wt-20, ht-70);
          }
     //  g.flip();
     }
