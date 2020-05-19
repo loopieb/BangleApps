@@ -30,9 +30,11 @@ function setBigFont () {
 function setSmallFont () {
   g.setFontCustom(
     smallCustomFont[0],
-    32,
+    48,
+    //32,
     smallCustomFont[1],
-    12
+    58
+    //12
   );
 }
 
