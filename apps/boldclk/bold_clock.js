@@ -1,3 +1,4 @@
+g.setColor(1,1,1);
 var hour_hand = {
     width : 61, height : 8, bpp : 1,
     transparent : 0,
