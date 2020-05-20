@@ -3,8 +3,8 @@ let g;
 let Bangle;
 g.clear();
 function getTemp() { 
- var ht=g.getHeight()/2;
- var wt=g.getWidth()/2; 
+ var ht=(g.getHeight()/2);
+ var wt=(g.getWidth()/2); 
 //g.reset();
   NRF.findDevices(function(devices) {
     var found = false;
@@ -15,13 +15,13 @@ function getTemp() {
       var idx = d.indexOf(String.fromCharCode(0x09,0x18));
       if (idx>=0) {
         t = d.charCodeAt(idx+2);
-       print(t);
+      // print(t);
         g.setFont("Vector",20);
        g.drawString("Meds "+t+"c", wt-45, ht-45,true);
          }
      // g.flip();
     }
-   }, 1000 /* receive for 3000ms */);
+   }, 2000 /* receive for 3000ms */);
  }
 // look once a minute for temperature
 setInterval(getTemp, 5000);
