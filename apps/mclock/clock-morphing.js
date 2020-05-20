@@ -16,7 +16,7 @@ function getTemp() {
  var ht=(g.getHeight()/2);
  var wt=(g.getWidth()/2); 
 //g.reset();
- g.clear();
+// g.clear();
   NRF.findDevices(function(devices) {
     var found = false;
     for (var i in devices) {
