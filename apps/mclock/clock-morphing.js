@@ -13,6 +13,7 @@ var animInterval;
 var timeInterval;
 g.clear();
 function getTemp() { 
+ var d = 0
  var ht=g.getHeight()/2;
  var wt=g.getWidth()/2; 
 //g.reset();
@@ -32,7 +33,7 @@ function getTemp() {
          }
     //  g.flip();
     }
-   }, 1000 /* receive for 3000ms */);
+   }, 2000 /* receive for 3000ms */);
  }
 // look once a minute for temperature
 setInterval(getTemp, 5000);
