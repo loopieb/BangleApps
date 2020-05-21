@@ -16,7 +16,8 @@ function getTemp() {
       // print(t);
        g.setFontAlign(0, 0);
         g.setFont("Vector",20);
-       g.drawString(" Meds "+t+"c", wt-10, ht+55);
+       g.drawString(" My "+t+"c", wt-10, ht+55);
+       g.drawString(" "+t+"c", wt-10, ht+70);
          }
     //  g.flip();
     }
@@ -95,14 +96,14 @@ function draw_clock(){
     g.setBgColor(0,0,0);
     g.setColor(0,0,0);
     g.fillRect(0,24,239,239); // clear app area
-    g.setColor(1,1,1);
+    g.setColor(1,0,1);
 
     // draw cross lines for testing
     // g.setColor(1,0,0);
     // g.drawLine(clock_center.x - radius, clock_center.y, clock_center.x + radius, clock_center.y);
     // g.drawLine(clock_center.x, clock_center.y - radius, clock_center.x, clock_center.y + radius);
 
-    g.setColor(1,1,1);
+    g.setColor(1,0,1);
     let ticks = [0, 90, 180, 270];
     ticks.forEach((item)=>{
         let agl = item+180;
@@ -118,13 +119,13 @@ function draw_clock(){
     let minute_agl = minute_angle(date);
     g.drawImage(hour_hand, hour_pos_x(hour_agl), hour_pos_y(hour_agl), {rotate:hour_agl*p180}); //
     g.drawImage(minute_hand, minute_pos_x(minute_agl), minute_pos_y(minute_agl), {rotate:minute_agl*p180}); //
-    g.setColor(1,1,1);
+    g.setColor(1,0,1);
     g.fillCircle(clock_center.x, clock_center.y, 6);
     g.setColor(0,0,0);
     g.fillCircle(clock_center.x, clock_center.y, 3);
 
     // draw minute ticks. Takes long time to draw!
-    g.setColor(1,1,1);
+    g.setColor(1,0,1);
     for (var i=0; i<60; i++){
         let agl = i*6+180;
         g.drawImage(tick1.asImage(), rotate_around_x(big_wheel_x(i*6), agl, tick1), rotate_around_y(big_wheel_y(i*6), agl, tick1), {rotate:agl*p180});
