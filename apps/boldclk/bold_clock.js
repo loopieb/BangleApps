@@ -1,4 +1,34 @@
-g.setColor(1,1,1);
+g.clear();
+function getTemp() { 
+ var ht=(g.getHeight()/2);
+ var wt=(g.getWidth()/2); 
+//g.reset();
+// g.clear();
+  NRF.findDevices(function(devices) {
+    var found = false;
+    for (var i in devices) {
+      if (devices[i].name!="MyTemp") continue;
+      // index of 0x1809 in advertised data
+      var d = E.toString(devices[i].data);
+      var idx = d.indexOf(String.fromCharCode(0x09,0x18));
+      if (idx>=0) {
+        t = d.charCodeAt(idx+2);
+      // print(t);
+       g.setFontAlign(0, 0);
+        g.setFont("Vector",20);
+       g.drawString(" Meds "+t+"c", wt-10, ht+55);
+         }
+    //  g.flip();
+    }
+   }, 2000 /* receive for 3000ms */);
+ }
+// look once a minute for temperature
+setInterval(getTemp, 5000);
+
+
+
+
+g.setColor(1,0,1);
 var hour_hand = {
     width : 61, height : 8, bpp : 1,
     transparent : 0,
