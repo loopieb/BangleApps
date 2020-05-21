@@ -17,8 +17,7 @@ function getTemp() {
        g.setFontAlign(0, 0);
         g.setFont("Vector",20);
        g.setColor(0,1,0);
-       g.drawString("My c", wt+55, ht-15);
-       
+       g.drawString("My c", wt+55, ht-15);       
        g.drawString(" "+t, wt+55, ht+10);
          }
     //  g.flip();
