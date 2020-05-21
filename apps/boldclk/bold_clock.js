@@ -16,8 +16,8 @@ function getTemp() {
       // print(t);
        g.setFontAlign(0, 0);
         g.setFont("Vector",20);
-       g.drawString(" My "+t+"c", wt, ht);
-       g.drawString(" "+t+"c", wt, ht+70);
+       g.drawString(" My c", wt+60, ht);
+       g.drawString(" "+t+"c", wt+60, ht+70);
          }
     //  g.flip();
     }
