@@ -16,9 +16,10 @@ function getTemp() {
       // print(t);
        g.setFontAlign(0, 0);
         g.setFont("Vector",20);
-       g.drawString("My c", wt+60, ht-20);
        g.setColor(0,1,0);
-       g.drawString(" "+t+"c", wt+60, ht);
+       g.drawString("My c", wt+55, ht-20);
+       
+       g.drawString(" "+t+"c", wt+55, ht);
          }
     //  g.flip();
     }
@@ -97,7 +98,7 @@ function draw_clock(){
     g.setBgColor(0,0,0);
     g.setColor(0,0,0);
     g.fillRect(0,24,239,239); // clear app area
-    g.setColor(1,0,1);
+    g.setColor(0,1,0);
 
     // draw cross lines for testing
     // g.setColor(1,0,0);
