@@ -2,7 +2,7 @@
 let g;
 let Bangle;
 g.clear();
-function getTemp() { 
+setInterval(function getTemp() { 
  var ht=(g.getHeight()/2);
  var wt=(g.getWidth()/2); 
 //g.reset();
@@ -18,13 +18,12 @@ function getTemp() {
       // print(t);
         g.setFont("Vector",20);
        g.drawString("Meds "+t+"c", wt-45, ht-45,true);
-         }
-     // g.flip();
+    // g.flip();   
+      }
     }
    }, 2000 /* receive for 3000ms */);
- }
+ }, 5000);
 // look once a minute for temperature
-setInterval(getTemp, 5000);
 
 
 // http://forum.espruino.com/conversations/345155/#comment15172813
