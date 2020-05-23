@@ -13,6 +13,7 @@
   };
 
   function gbSend(message) {
+    Bluetooth.println("");
     Bluetooth.println(JSON.stringify(message));
   }
 
@@ -81,17 +82,17 @@
       g.setFontAlign(0, 0);
       g.setFont("6x8", 1);
       g.setColor("#40d040");
-    //  g.drawString(event.src, x, y + 7);
+      g.drawString(event.src, x, y + 7);
 
       g.setColor("#ffffff");
       g.setFont("6x8", 2);
       if (event.title)
-    //    g.drawString(event.title.slice(0,17), x, y + 25);
+        g.drawString(event.title.slice(0,17), x, y + 25);
 
       g.setFont("6x8", 1);
       g.setColor("#ffffff");
       g.setFontAlign(-1, -1);
-    //  g.drawString(txt.join("\n"), 10, y + 40);
+      g.drawString(txt.join("\n"), 10, y + 40);
     });
 
     Bangle.buzz();
@@ -104,7 +105,7 @@
     if (state.music == "play") {
       showNotification(40, (y) => {
         g.setColor("#ffffff");
-     //   g.drawImage(require("heatshrink").decompress(atob("jEYwILI/EAv/8gP/ARcMgOAASN8h+A/kfwP8n4CD/E/gHgjg/HA=")), 8, y + 8);
+        g.drawImage(require("heatshrink").decompress(atob("jEYwILI/EAv/8gP/ARcMgOAASN8h+A/kfwP8n4CD/E/gHgjg/HA=")), 8, y + 8);
 
         g.setFontAlign(-1, -1);
         var x = 40;
@@ -145,6 +146,7 @@
     }
   }
 
+  var _GB = global.GB;
   global.GB = (event) => {
     switch (event.t) {
       case "notify":
@@ -160,6 +162,7 @@
         handleCallEvent(event);
         break;
     }
+    if(_GB)setTimeout(_GB,0,event);
   };
 
   // Touch control
@@ -189,10 +192,16 @@
     g.flip(); // turns screen on
   }
 
-  NRF.on("connected", changedConnectionState);
-  NRF.on("disconnected", changedConnectionState);
+  NRF.on("connect", changedConnectionState);
+  NRF.on("disconnect", changedConnectionState);
 
   WIDGETS["gbridgew"] = { area: "tl", width: 24, draw: draw };
 
-  gbSend({ t: "status", bat: E.getBattery() });
+  function sendBattery() {
+    gbSend({ t: "status", bat: E.getBattery() });
+  }
+
+  NRF.on("connect", () => setTimeout(sendBattery, 2000));
+  setInterval(sendBattery, 10*60*1000);
+  sendBattery();
 })();
