@@ -131,7 +131,7 @@
         g.drawImage(require("heatshrink").decompress(atob("jEYwIMJj4CCwACJh4CCCIMOAQMGAQMHAQMDAQMBCIMB4PwgHz/EAn4CBj4CBg4CBgACCAAw=")), 8, y + 8);
 
         g.setFontAlign(-1, -1);
-        var x = 60;
+        var x = 90;
         g.setFont("4x6", 2);
         g.setColor("#ffffff");
         g.drawString(event.name, x, y + 8);
