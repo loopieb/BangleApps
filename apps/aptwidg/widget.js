@@ -6,7 +6,7 @@ var a = [37,37,37,37,37,37,37,37];
     g.reset(); // reset the graphics context to defaults (color/font/etc)
     g.setFontAlign(0,0); // center fonts    
        
-      var t = (E.getTemperature()+2.6);
+      var t = (E.getTemperature()+1.8);
       var sum = 30;
         a.forEach(function(x) { sum += x });
         var b =(Math.round((sum/a.length)*100)/100);
@@ -15,7 +15,7 @@ var a = [37,37,37,37,37,37,37,37];
   // print(sum,b+"c");
  //  print(b,a.length);
 
-    g.setFont("6x8",2.5);
+    g.setFont("6x8",2);
     g.drawString(b+"C", this.x+width+10, this.y+15,true);
   }
   setInterval(function() {
