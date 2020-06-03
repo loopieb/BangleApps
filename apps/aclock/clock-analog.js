@@ -115,7 +115,7 @@ const drawDate = () => {
   const dayString = locale.dow(currentDate, true);
   // pad left date
   const dateString = (currentDate.getDate() < 10) ? '0' : '' + currentDate.getDate().toString();
-  const dateDisplay = `${dayString}-${dateString}`;
+  const dateDisplay = `${dayString}--${dateString}`;
   // console.log(`${dayString}|${dateString}`);
   // center date
   const l = (g.getWidth() - g.stringWidth(dateDisplay)) / 2;
