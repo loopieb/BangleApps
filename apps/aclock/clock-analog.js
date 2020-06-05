@@ -17,7 +17,7 @@ setInterval(function getTemp() {
        var wt=(g.getWidth() - g.stringWidth(t)) / 2;
       // print(t);
         g.setFont("Vector",20);
-       g.drawString("Meds "+t+"c", wt+20, ht-45,true);
+       g.drawString("Meds "+t+"c", l, ht-45,true);
     // g.flip();   
       }
     }
