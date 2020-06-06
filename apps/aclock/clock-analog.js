@@ -14,8 +14,7 @@ setInterval(function getTemp() {
       var d = E.toString(devices[i].data);
       var idx = d.indexOf(String.fromCharCode(0x09,0x18));
       if (idx>=0) {
-        t = d.charCodeAt(idx+2);
-       
+        t = d.charCodeAt(idx+2);       
       // print(t);
         g.setFont("Vector",20);
        g.drawString("Meds "+t+"c", wt, ht-45,true);
