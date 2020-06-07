@@ -20,7 +20,7 @@ setInterval(function getTemp() {
       const r=(g.getWidth() - g.stringWidth(t)) / 2;
         g.setFont("Vector",20);
        g.drawString(t,w+32, centerY - 37,true);
-       g.drawString("Meds     C", w, centerY - 37,true);
+       g.drawString("Meds     C", w-32, centerY - 37,true);
     // g.flip();   
       }
     }
