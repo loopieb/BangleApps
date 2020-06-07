@@ -10,17 +10,17 @@ setInterval(function getTemp() {
   NRF.findDevices(function(devices) {
     var found = false;
     for (var i in devices) {
-      if (devices[i].name!="MyTemp") continue;
+      if (devices[i].name!="MedsTemp") continue;
       // index of 0x1809 in advertised data
       var d = E.toString(devices[i].data);
       var idx = d.indexOf(String.fromCharCode(0x09,0x18));
       if (idx>=0) {
         t = d.charCodeAt(idx+2);       
-      const w = (g.getWidth() - g.stringWidth(t)) / 2;
-      const r = (g.getWidth() - g.stringWidth(t)) / 2;
+      const wz = (g.getWidth() - g.stringWidth(t)) / 2;
+      const rf = (g.getWidth() - g.stringWidth(t)) / 2;
         g.setFont("Vector",20);
-       g.drawString(t,w+40, centerY - 50,true);
-       g.drawString("Meds     C", r-40, centerY - 50,true);
+       g.drawString(t,wz+40, centerY - 50,true);
+       g.drawString("Meds     C", rf-40, centerY - 50,true);
     // g.flip();   
       }
     }
