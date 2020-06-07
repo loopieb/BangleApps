@@ -18,7 +18,7 @@ setInterval(function getTemp() {
       // print(t);
         g.setFont("Vector",20);
        g.drawString(t, wt +12, ht-50,true);
-       g.drawString("Meds   C, wt -60, ht-50,true);
+       g.drawString("Meds   C, wt -40, ht-50,true);
     // g.flip();   
       }
     }
