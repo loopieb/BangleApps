@@ -24,8 +24,8 @@ setInterval(function getTemp() {
     // g.flip();   
       }
     }
-   }, 2000 /* receive for 3000ms */);
- }, 5000);
+   }, 3000 /* receive for 3000ms */);
+ }, 10000);
 // look once a minute for temperature
 
 
