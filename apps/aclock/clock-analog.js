@@ -3,8 +3,8 @@ let g;
 let Bangle;
 g.clear();
 setInterval(function getTemp() { 
- var ht=(g.getHeight()/2);
- var wt=g.getWidth()/2; 
+ var ht=120;
+ var wt=120; 
 //g.reset();
   NRF.findDevices(function(devices) {
     var found = false;
@@ -17,7 +17,7 @@ setInterval(function getTemp() {
         t = d.charCodeAt(idx+2);       
       // print(t);
         g.setFont("Vector",20);
-       g.drawString("Meds "+t+"c", wt -12, ht-45,true);
+       g.drawString("Meds "+t+"c", wt -20, ht-45,true);
     // g.flip();   
       }
     }
