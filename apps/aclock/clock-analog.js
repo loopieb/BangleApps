@@ -1,8 +1,8 @@
 // eliminate ide undefined errors
 let g;
 let Bangle;
+const widgetHeight=24+1;
 const centerY = (g.getWidth() / 2) + widgetHeight/2;
-
 g.clear();
 setInterval(function getTemp() { 
  var ht=120; 
@@ -17,7 +17,7 @@ setInterval(function getTemp() {
       if (idx>=0) {
         t = d.charCodeAt(idx+2);       
       const w=(g.getWidth() - g.stringWidth(t)) / 2;
-       const r=(g.getWidth() - g.stringWidth(t)) / 2;
+      const r=(g.getWidth() - g.stringWidth(t)) / 2;
         g.setFont("Vector",20);
        g.drawString(t,w+32, centerY - 37,true);
        g.drawString("Meds     C", w, centerY - 37,true);
@@ -34,11 +34,11 @@ const locale = require('locale');
 const p = Math.PI / 2;
 const pRad = Math.PI / 180;
 const faceWidth = 100; // watch face radius (240/2 - 24px for widget area)
-const widgetHeight=24+1;
+// const widgetHeight=24+1;
 let timer = null;
 let currentDate = new Date();
 const centerX = g.getWidth() / 2;
-const centerY = (g.getWidth() / 2) + widgetHeight/2;
+// const centerY = (g.getWidth() / 2) + widgetHeight/2;
 
 
 
