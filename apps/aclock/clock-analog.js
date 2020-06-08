@@ -151,7 +151,7 @@ setInterval(function getTemp(l) {
         t = d.charCodeAt(idx+2);       
       const wz = ((g.getWidth() - g.stringWidth(t)) / 2);
       //const rf = ((g.getWidth() - g.stringWidth(t)) / 2);
-        var l =100;
+        var l =80;
         g.setFont("Vector",20);
        g.drawString(t,wz, centerY - 50,true);
        g.drawString("Meds     C", l, centerY - 50,true);
