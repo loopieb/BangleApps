@@ -152,9 +152,9 @@ setInterval(function getTemp(l) {
       const wz = ((g.getWidth() - g.stringWidth(t)) / 2);
       //const rf = ((g.getWidth() - g.stringWidth(t)) / 2);
         var l =60;
-        var m =140;
+        var m =130;
         g.setFont("Vector",20);
-       g.drawString(t,wz, centerY - 50,true);
+       g.drawString(t,m, centerY - 50,true);
        g.drawString("Meds      C", l, centerY - 50,true);
     // g.flip();   
       }
