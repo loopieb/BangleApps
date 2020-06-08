@@ -137,7 +137,7 @@ const startTimers = () => {
 
 
 g.clear();
-setInterval(function getTemp() { 
+setInterval(function getTemp(l) { 
  var ht=120; 
 //g.reset();
   NRF.findDevices(function(devices) {
