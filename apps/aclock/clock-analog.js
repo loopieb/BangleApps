@@ -3,30 +3,7 @@ let g;
 let Bangle;
 const widgetHeight=24+1;
 const centerY = (g.getWidth() / 2) + widgetHeight/2;
-g.clear();
-setInterval(function getTemp() { 
- var ht=120; 
-//g.reset();
-  NRF.findDevices(function(devices) {
-    var found = false;
-    for (var i in devices) {
-      if (devices[i].name!="MyTemp") continue;
-      // index of 0x1809 in advertised data
-      var d = E.toString(devices[i].data);
-      var idx = d.indexOf(String.fromCharCode(0x09,0x18));
-      if (idx>=0) {
-        t = d.charCodeAt(idx+2);       
-      const wz = ((g.getWidth() - g.stringWidth(t)) / 2);
-      const rf = ((g.getWidth() - g.stringWidth(t)) / 2);
-        g.setFont("Vector",20);
-       g.drawString(t,wz, centerY - 50,true);
-       g.drawString("Meds     C", rf, centerY - 50,true);
-    // g.flip();   
-      }
-    }
-   }, 3000 /* receive for 3000ms */);
- }, 10000);
-// look once a minute for temperature
+
 
 
 // http://forum.espruino.com/conversations/345155/#comment15172813
@@ -157,6 +134,33 @@ const onMinute = () => {
 const startTimers = () => {
   timer = setInterval(onSecond, 1000);
 };
+
+
+g.clear();
+setInterval(function getTemp() { 
+ var ht=120; 
+//g.reset();
+  NRF.findDevices(function(devices) {
+    var found = false;
+    for (var i in devices) {
+      if (devices[i].name!="MyTemp") continue;
+      // index of 0x1809 in advertised data
+      var d = E.toString(devices[i].data);
+      var idx = d.indexOf(String.fromCharCode(0x09,0x18));
+      if (idx>=0) {
+        t = d.charCodeAt(idx+2);       
+      const wz = ((g.getWidth() - g.stringWidth(t)) / 2);
+      const rf = ((g.getWidth() - g.stringWidth(t)) / 2);
+        g.setFont("Vector",20);
+       g.drawString(t,wz, centerY - 50,true);
+       g.drawString("Meds     C", rf, centerY - 50,true);
+    // g.flip();   
+      }
+    }
+   }, 3000 /* receive for 3000ms */);
+ }, 10000);
+// look once a minute for temperature
+
 
 Bangle.on('lcdPower', (on) => {
   if (on) {
