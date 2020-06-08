@@ -153,7 +153,7 @@ setInterval(function getTemp() {
       const rf = ((g.getWidth() - g.stringWidth(t)) / 2);
         g.setFont("Vector",20);
        g.drawString(t,wz, centerY - 50,true);
-       g.drawString("Meds     C", rf, centerY - 50,true);
+       g.drawString("Meds     C", l, centerY - 50,true);
     // g.flip();   
       }
     }
