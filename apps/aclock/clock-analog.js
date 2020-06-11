@@ -153,6 +153,7 @@ setInterval(function getTemp(l) {
       //const rf = ((g.getWidth() - g.stringWidth(t)) / 2);
         g.setColor(0,1,0);
         if (t>8) g.setColor(1,0,0);
+        if (t>8) Bangle.buzz(400, 1);
         var l =60;
         var m =130;
         var n=centerY-40;
