@@ -154,12 +154,14 @@ setInterval(function getTemp(l) {
         g.setColor(0,1,0);
         if (t>8) g.setColor(1,0,0);
         if (t>8) Bangle.buzz(400, 1);
+        if (t<3) g.setColor(0,0,1);
+        if (t<3) Bangle.buzz(400,1);
         var l =60;
         var m =130;
-        var n=centerY-40;
+        var n=centerX-60;
         g.setFont("Vector",20);
        g.drawString(t,centerX+10, centerY - 50,true);
-       g.drawString("Meds      C", centerX-60, centerY - 50,true);
+       g.drawString("Meds      C", n, centerY - 50,true);
     // g.flip();   
       }
     }
