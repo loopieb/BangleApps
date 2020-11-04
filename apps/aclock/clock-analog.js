@@ -167,7 +167,7 @@ setInterval(function getTemp(l) {
       }
     }
    }, 3000 /* receive for 3000ms */);
- }, 10000);
+ }, 300000);
 // look once a minute for temperature
 
 
